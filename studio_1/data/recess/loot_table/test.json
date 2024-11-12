@@ -1,0 +1,41 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "id": "grey",
+                    "attribute": "minecraft:generic.gravity",
+                    "amount": -1,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "id": "random",
+                    "attribute": "minecraft:generic.scale",
+                    "amount": -1,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "replace": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

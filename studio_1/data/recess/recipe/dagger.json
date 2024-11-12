@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  I",
+    " I",
+    "S"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stone"
+    },
+    "B": {
+      "item": "minecraft:dirt"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "minecraft:iron_sword",
+    "count": 1,
+    "components": {
+      "minecraft:unbreakable": {
+        "show_in_tooltip": false
+      },
+      "minecraft:enchantments": {
+        "levels": {
+          "minecraft:sharpness": 10
+        }
+      },
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "id": "minecraft:generic.movement_speed",
+            "type": "minecraft:generic.movement_speed",
+            "amount": 0.1,
+            "operation": "add_value",
+            "slot": "any"
+          }
+        ],
+        "show_in_tooltip": false
+      },
+      "minecraft:item_name": "\"dagger\""
+    }
+  }
+}

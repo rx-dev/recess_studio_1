@@ -1,0 +1,8 @@
+{
+    "sound_event": {
+        "sound_id": "studio_1:music.da_wae"
+    },
+    "description": "Do you know da wae",
+    "length_in_seconds": 80,
+    "comparator_output": 2
+}
