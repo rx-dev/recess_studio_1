@@ -1,4 +1,5 @@
 say i'm waving
+say hi! im 1
 scoreboard players set @s wave 0
 
 execute at @s run summon minecraft:skeleton ~ ~ ~ {\
