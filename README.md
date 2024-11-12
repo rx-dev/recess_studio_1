@@ -1,5 +1,5 @@
 # Wand
-
+mtg's the best
 ## Gems
 - Speed Gem
   - Just gives speed
