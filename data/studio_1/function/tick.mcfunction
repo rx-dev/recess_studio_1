@@ -12,5 +12,8 @@ execute as @a[scores={frozen=1..}] run title @s actionbar [{"text": "Frozen for 
 execute as @a[scores={frozen=1}] run function studio_1:ice_wand/unfreeze
 
 
-execute as @a unless items entity @s container.* minecraft:echo_shard[minecraft:item_name="🜲Shard🜲"] run give @s minecraft:echo_shard[minecraft:item_name="🜲Shard🜲"]
-kill @e[type=minecraft:item,name="🜲Shard🜲"]
+execute as @a unless items entity @s container.* minecraft:echo_shard[minecraft:item_name=shard] run give @s minecraft:echo_shard[minecraft:item_name=shard]
+kill @e[type=minecraft:item,name=hard]
+function studio_1:tick
+
+say ran
