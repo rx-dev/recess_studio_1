@@ -10,3 +10,7 @@ execute as @a[scores={wave=1..}] run function studio_1:wave
 scoreboard players remove @a[scores={frozen=1..}] frozen 1
 execute as @a[scores={frozen=1..}] run title @s actionbar [{"text": "Frozen for ", "color": "#A7C7E7"}, {"score": {"name": "@s", "objective": "frozen"}}]
 execute as @a[scores={frozen=1}] run function studio_1:ice_wand/unfreeze
+
+
+execute as @a unless items entity @s container.* minecraft:echo_shard[minecraft:item_name="🜲Shard🜲"] run give @s minecraft:echo_shard[minecraft:item_name="🜲Shard🜲"]
+kill @e[type=minecraft:item,name="🜲Shard🜲"]
