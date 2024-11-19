@@ -1,0 +1,36 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:echo_shard",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{spell: {type: \"fire\"}}"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:consumable": {
+                                    "consume_seconds": 2147483647,
+                                    "animation": "bow",
+                                    "sound": {
+                                        "sound_id": "\"\""
+                                    },
+                                    "has_consume_particles": false
+                                },
+                                "minecraft:item_name": "{\"text\": \"Fire Spell\", \"color\": \"red\"}",
+                                "minecraft:lore": [
+                                    "{\"text\": \"Spew fire\", \"italic\": false, \"color\": \"white\"}"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
