@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{spell: {type: \"fire\"}}"
+                            "tag": "{spell: {type: 'fire'}}"
                         },
                         {
                             "function": "minecraft:set_components",
