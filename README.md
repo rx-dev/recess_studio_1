@@ -32,3 +32,7 @@ mtg's the best
 
 - Scoreboard to deplete
 - actionbar to make it show
+
+## Right click detection
+- 
+## Raycasting
