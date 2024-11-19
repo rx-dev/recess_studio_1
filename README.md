@@ -29,3 +29,6 @@ mtg's the best
 - Mana
   - Red
 -  SKIBIBIBIBIIBIBIBII
+
+- Scoreboard to deplete
+- actionbar to make it show
