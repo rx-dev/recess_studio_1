@@ -1,7 +1,14 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:using_item"
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "minecraft:custom_data": "{spell: {type: 'fire'}}"
+                    }
+                }
+            }
         }
     },
     "rewards": {
