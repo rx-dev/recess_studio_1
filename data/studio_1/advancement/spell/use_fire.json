@@ -5,7 +5,7 @@
             "conditions": {
                 "item": {
                     "components": {
-                        "minecraft:custom_data": {}
+                        "minecraft:custom_data": "{spell: {type: 'fire'}}"
                     }
                 }
             }
