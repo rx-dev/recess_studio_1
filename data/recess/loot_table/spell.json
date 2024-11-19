@@ -18,7 +18,7 @@
                                     "consume_seconds": 2147483647,
                                     "animation": "bow",
                                     "sound": {
-                                        "sound_id": "\"\""
+                                        "sound_id": "studio_1"
                                     },
                                     "has_consume_particles": false
                                 },
