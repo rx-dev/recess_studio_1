@@ -1,6 +1,3 @@
-data remove storage studio_1:data input
-execute store result storage studio_1:data input.charge int 1 run scoreboard players get @s charge
-
 execute \
     if score #hit raycast matches 0 \
     positioned ~-0.9 ~-0.9 ~-0.9 \
