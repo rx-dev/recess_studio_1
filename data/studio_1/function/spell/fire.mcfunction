@@ -10,3 +10,7 @@ scoreboard players set @s[scores={charge=10..}] charge 9
 tag @s add spell.charging
 
 execute anchored eyes run particle minecraft:soul_fire_flame ^-0.2 ^ ^ 0.3 0.3 0.3 0.1 3
+
+data remove storage studio_1:data input
+execute store result storage studio_1:data input.charge int 1 run scoreboard players get @s charge
+function studio_1:spell/sound_macro with storage studio_1:data input

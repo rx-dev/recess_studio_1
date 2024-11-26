@@ -7,6 +7,10 @@ $execute \
     if score #mod raycast matches 1 \
     run particle minecraft:flame ~ ~ ~ 0.$(charge) 0.$(charge) 0.$(charge) 0 $(charge)
 
+execute \
+    if score #mod raycast matches 1 \
+    run playsound minecraft:entity.firework_rocket.blast
+
 execute positioned ~-0.05 ~-0.05 ~-0.05 as @e[tag=!self,tag=!ray_entity,dx=0] run function studio_1:spell/ray/check_hit
 $execute \
     if block ~ ~ ~ air \
