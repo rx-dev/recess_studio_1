@@ -9,3 +9,4 @@ execute anchored eyes positioned ^-0.2 ^ ^ run function studio_1:spell/ray/iter 
 tag @s remove self
 
 scoreboard players set @s charge 0
+data remove storage studio_1:data input
