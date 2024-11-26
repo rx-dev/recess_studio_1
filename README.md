@@ -36,3 +36,10 @@ mtg's the best
 ## Right click detection
 - 
 ## Raycasting
+
+
+# Tues 26th
+- raycasting
+- red mana bar
+- spell switching system
+- 
