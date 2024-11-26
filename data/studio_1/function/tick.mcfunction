@@ -14,3 +14,4 @@ execute as @a[scores={frozen=1}] run function studio_1:ice_wand/unfreeze
 
 function studio_1:gems/tick
 function studio_1:mana/tick
+function studio_1:spell/tick
