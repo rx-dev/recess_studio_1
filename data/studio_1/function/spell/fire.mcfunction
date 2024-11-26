@@ -1,7 +1,7 @@
 advancement revoke @s only studio_1:spell/use_fire
 
 # handle mana
-execute unless score @s mana matches 1.. run return fail
+execute if score @s mana matches ..0 run return fail
 scoreboard players remove @s mana 10
 scoreboard players set @s[scores={mana=..0}] mana 0
 
