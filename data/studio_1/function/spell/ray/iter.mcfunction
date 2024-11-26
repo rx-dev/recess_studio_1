@@ -4,7 +4,6 @@ scoreboard players set #8 raycast 8
 scoreboard players operation #mod raycast %= #8 raycast 
 
 execute \
-    if score #iter raycast matches 4.. \ 
     if score #mod raycast matches 1 \
     run particle minecraft:flame ~ ~ ~ 0 0 0 0 1
 
