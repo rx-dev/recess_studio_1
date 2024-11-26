@@ -3,5 +3,5 @@ advancement revoke @s only studio_1:spell/use_fire
 tag @s add self
 scoreboard players set #hit raycast 0
 scoreboard players set #iter raycast 0
-execute anchored eyes positioned ^0.2 ^ ^ run function studio_1:spell/ray/iter
+execute anchored eyes positioned ^-0.2 ^ ^ run function studio_1:spell/ray/iter
 tag @s remove self
