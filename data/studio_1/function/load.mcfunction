@@ -4,3 +4,5 @@ scoreboard objectives add frozen dummy
 scoreboard objectives add wave trigger 
 scoreboard objectives add upgrade trigger
 scoreboard objectives add skib trigger
+scoreboard objectives add fire_ball_timer dummy
+scoreboard objectives add fire_ball_y_velocity dummy
