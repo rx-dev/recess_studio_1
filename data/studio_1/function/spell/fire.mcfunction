@@ -1,7 +1,5 @@
 advancement revoke @s only studio_1:spell/use_fire
 
-say "charging"
-
 # if sneaking, change spell
 execute \
     if predicate studio_1:is_sneaking \
