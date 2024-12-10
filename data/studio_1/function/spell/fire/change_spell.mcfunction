@@ -3,8 +3,8 @@ tag @s add spell.changed_spell
 # detect whether or not ur holding the item
 # if not, we should leave early
 execute \
-    unless items entity @s weapon.* *[custom_data~{spell: {type: "fire"}}]
-    unless items entity @s weapon.* *[custom_data~{spell: {type: "fire_mk_II"}}]
+    unless items entity @s weapon.* *[custom_data~{spell: {type: "fire"}}] \
+    unless items entity @s weapon.* *[custom_data~{spell: {type: "fire_mk_II"}}] \
     run return fail
 
 
