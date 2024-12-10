@@ -1,3 +1,16 @@
+# Spells
+## Upgrade em
+## Weaknesss
+- Fire is weak to water
+
+# shift to swap
+
+
+
+
+
+
+
 # Wand
 mtg's the best
 ## Gems
