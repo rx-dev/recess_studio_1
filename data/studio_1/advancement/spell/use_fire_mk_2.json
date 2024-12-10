@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "studio_1:spell/fire"
+        "function": "studio_1:spell/fire_mark_ii"
     }
 }
