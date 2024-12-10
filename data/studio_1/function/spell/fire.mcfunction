@@ -3,7 +3,7 @@ advancement revoke @s only studio_1:spell/use_fire
 # if sneaking, change spell
 execute \
     if predicate studio_1:is_sneaking \
-    unless entity @s[tag=spell.changed_spell]
+    unless entity @s[tag=spell.changed_spell] \
     run function studio_1:spell/fire/change_spell
 
 # quit if not enough mana
