@@ -1,1 +1,1 @@
-$tp @s ^ ^$(y_velocity) ^2
+$tp @s ^ ^$(y_velocity) ^1
