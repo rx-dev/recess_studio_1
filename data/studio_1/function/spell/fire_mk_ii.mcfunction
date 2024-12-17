@@ -1,4 +1,4 @@
-advancement revoke @s only studio_1:spell/fire_mk_ii
+advancement revoke @s only studio_1:spell/use_fire_mk_ii
 
 # if sneaking, change spell
 execute \
