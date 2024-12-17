@@ -1,1 +1,1 @@
-$tp @s ^$(x_velocity) ^$(y_velocity) ^$(z_velocity)
+$tp @s ^ ^$(y_velocity) ^0.25
