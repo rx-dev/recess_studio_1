@@ -4,7 +4,8 @@ item modify entity @s weapon.mainhand { \
         "spell": "{type: fire_mk_II}" \
     } \
 }
-item modify entity @s weapon.mainhand {
+
+item modify entity @s weapon.mainhand { \
     "function": "minecraft:set_components", \
     "components": { \
         "minecraft:item_name": "{\"text\": \"Fire Spell MK II\", \"color\": \"red\"}" \
