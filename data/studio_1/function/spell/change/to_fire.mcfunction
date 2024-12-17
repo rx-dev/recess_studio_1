@@ -1,7 +1,7 @@
 item modify entity @s weapon.mainhand { \
     "function": "minecraft:set_custom_data", \
     "tag": { \
-        "spell": "{type: fire}" \
+        "spell": {type: "fire"} \
     } \
 }
 item modify entity @s weapon.mainhand {
