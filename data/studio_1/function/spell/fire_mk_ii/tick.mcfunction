@@ -1,7 +1,7 @@
 # @s: fireball
 
 # movement
-scoreboard players remove @s[scores={fire_ball_y_velocity=-100..}] fire_ball_y_velocity 8
+scoreboard players remove @s[scores={fire_ball_y_velocity=-100..}] fire_ball_y_velocity 4
 
 data modify storage studio_1:data input set value {}
 execute \
