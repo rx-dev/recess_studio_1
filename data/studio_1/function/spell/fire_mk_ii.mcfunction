@@ -7,10 +7,10 @@ execute \
     run function studio_1:spell/change_spell
 
 # quit if not enough mana
-execute if score @s mana matches ..19 run return fail
+execute if score @s mana matches ..2 run return fail
 
 # update mana and start charging
-scoreboard players remove @s mana 20
+scoreboard players remove @s mana 3
 scoreboard players add @s charge 1
 scoreboard players set @s[scores={charge=20..}] charge 19
 tag @s add spell.charging
