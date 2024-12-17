@@ -17,4 +17,4 @@ particle minecraft:flame
 
 # disappear after 10 seconds
 scoreboard players add @s fire_ball_timer 1
-execute if score @s fire_ball_timer matches 200.. run kill @s
+execute if score @s fire_ball_timer matches 100.. run kill @s
