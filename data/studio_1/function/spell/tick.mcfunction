@@ -13,4 +13,4 @@ execute \
 tag @a[tag=!spell.charging] remove spell.changed_spell
 tag @a remove spell.charging
 
-execute as @e[type=item_display, tag=fireball] at @s run function studio_1:spell/fire_mk_ii/tick
+execute as @e[type=marker, tag=fireball] at @s run function studio_1:spell/fire_mk_ii/tick
