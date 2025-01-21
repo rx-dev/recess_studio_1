@@ -1,0 +1,52 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:profile": {
+                                    "id": [
+                                        1215658229,
+                                        -1461304518,
+                                        -1593715069,
+                                        1654155018
+                                    ],
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzlmYThkYTBkN2I4ZTEwZTRhODYxZmE5NmQ0Njk5M2E3MWE0YzAxYTFiNzU2MDljN2Q2ZTM0MjkxMTZhNmRlNCJ9fX0="
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "Chicken Head",
+                                    "color": "gold",
+                                    "underlined": true,
+                                    "bold": true,
+                                    "italic": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
