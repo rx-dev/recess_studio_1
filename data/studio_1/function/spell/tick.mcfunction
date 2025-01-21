@@ -1,4 +1,4 @@
-scoreboard players set @a[scores={charge=10..}] charge 9
+scoreboard players set @a[scores={charge=100..}] charge 99
 execute \
     as @a[scores={charge=1..},tag=!spell.charging] \
     at @s \
