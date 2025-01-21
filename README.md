@@ -6,7 +6,11 @@
 # shift to swap
 
 
+## Fireball Features
+- Shooting high dmg fireball / Fast fireball
 
+## Devil deal
+- use health instead of mana (upgrade)
 
 
 
