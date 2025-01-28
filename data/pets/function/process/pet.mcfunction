@@ -7,3 +7,6 @@ execute as @a if score @s pets.id = #compare_id pets.id run tag @s add pets.owne
 # set target of the pet
 data modify entity @s wander_target set from entity @p[tag=pets.owner] Pos
 tag @a remove pets.owner
+
+# reset despawn delay
+data modify entity @s DespawnDelay set value 100000
