@@ -4,10 +4,10 @@ execute as @a if score @s pets.id = #compare_id pets.id run tag @s add pets.owne
 execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id run tag @s add pets.pet
 
 # if visual is dead, die
-execute unless entity @e[tag=pets.pet] run tp @s ~ ~-100000 ~
+execute unless entity @n[tag=pets.pet] run tp @s ~ ~-100000 ~
 
 # tp pet
-tp @e[tag=pets.pet] @s
+tp @n[tag=pets.pet] ~ ~ ~ facing @p[tag=pets.owner]
 tag @e remove pets.pet
 
 # set target of the pet
