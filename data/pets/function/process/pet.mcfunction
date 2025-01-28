@@ -7,7 +7,7 @@ execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id run tag
 execute unless entity @n[tag=pets.pet] run tp @s ~ ~-100000 ~
 
 # tp pet
-execute facing entity @p[tag=pets.owner] eyes run tp @n[tag=pets.pet] ~ ~ ~
+execute facing entity @p[tag=pets.owner] eyes run tp @n[tag=pets.pet] ~ ~1 ~
 tag @e remove pets.pet
 
 # set target of the pet
