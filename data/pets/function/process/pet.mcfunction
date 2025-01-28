@@ -1,6 +1,11 @@
 # find linked player
 scoreboard players operation #compare_id pets.id = @s pets.id
 execute as @a if score @s pets.id = #compare_id pets.id run tag @s add pets.owner
+execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id run tag @s add pets.pet
+
+# tp pet
+tp @e[tag=pets.pet] @s
+tag @e remove pets.pet
 
 # set target of the pet
 data modify storage temp wander_target set value [I;0,0,0]
