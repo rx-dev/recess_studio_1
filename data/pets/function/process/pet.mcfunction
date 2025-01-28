@@ -10,3 +10,7 @@ tag @a remove pets.owner
 
 # reset despawn delay
 data modify entity @s DespawnDelay set value 100000
+
+# remove milk
+item replace entity @s weapon.mainhand with air
+effect give @s minecraft:invisibility infinite 1 true
