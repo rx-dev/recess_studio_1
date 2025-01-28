@@ -3,6 +3,9 @@ scoreboard players operation #compare_id pets.id = @s pets.id
 execute as @a if score @s pets.id = #compare_id pets.id run tag @s add pets.owner
 execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id run tag @s add pets.pet
 
+# if visual is dead, die
+execute unless entity @e[tag=pets.pet] run tp @s ~ ~-100000 ~
+
 # tp pet
 tp @e[tag=pets.pet] @s
 tag @e remove pets.pet
