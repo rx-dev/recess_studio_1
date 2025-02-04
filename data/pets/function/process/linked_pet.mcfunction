@@ -5,9 +5,9 @@ scoreboard players set #found_linked_pet temp 1
 data modify entity @s[type=item_display] start_interpolation set value 0
 
 # tp / rotate pet
-tp @n[tag=pets.linked_pet] ~ ~0.6 ~
-rotate @n[tag=pets.linked_pet] facing entity @p[tag=pets.owner] eyes
-rotate @n[type=item_display,tag=pets.linked_pet] ~-180 ~
+tp @s ~ ~0.6 ~
+rotate @s facing entity @p[tag=pets.owner] eyes
+rotate @s[type=item_display] ~-180 ~
 
 # detect if moving by checking previous locations
 execute store result score #x temp run data get entity @s Pos[0]
