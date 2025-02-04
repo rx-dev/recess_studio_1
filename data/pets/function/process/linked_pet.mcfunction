@@ -24,5 +24,5 @@ scoreboard players operation @s pets.prev_y = #y temp
 scoreboard players operation @s pets.prev_z = #z temp
 
 # particles and sounds
-execute at @s[tag=pets.is_moving] run particle minecraft:poof ~ ~ ~ 0 0 0 0 1
-execute at @s[tag=pets.is_moving] run playsound minecraft:entity.chicken.step neutral @a ~ ~ ~ 0.4
+execute at @s[tag=pets.is_moving] if predicate pets:40 run particle minecraft:poof ~ ~ ~ 0 0 0 0 1
+execute at @s[tag=pets.is_moving] if predicate pets:40 run playsound minecraft:entity.chicken.step neutral @a ~ ~ ~ 0.4
