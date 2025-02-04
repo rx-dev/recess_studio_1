@@ -5,7 +5,7 @@ scoreboard players set #found_linked_pet temp 0
 # find linked player
 scoreboard players operation #compare_id pets.id = @s pets.id
 execute as @a if score @s pets.id = #compare_id pets.id run tag @s add pets.owner
-execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id at @s run function pets:process/linked_pet
+execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id run function pets:process/linked_pet
 
 # kill if not found
 execute unless score #found_linked_pet temp matches 1 run tp @s ~ ~-100000 ~
