@@ -1,14 +1,17 @@
 # find linked player
 scoreboard players operation #compare_id pets.id = @s pets.id
 execute as @a if score @s pets.id = #compare_id pets.id run tag @s add pets.owner
-execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id run tag @s add pets.pet
+execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id run tag @s add pets.trader
 
 # if visual is dead, die
-execute unless entity @n[tag=pets.pet] run tp @s ~ ~-100000 ~
+execute unless entity @n[tag=pets.trader] run tp @s ~ ~-100000 ~
+
+# interpolate
+data modify entity @s[type=item_display] start_interpolation set value 0
 
 # tp pet
-execute facing entity @p[tag=pets.owner] eyes run tp @n[tag=pets.pet] ~ ~1 ~
-tag @e remove pets.pet
+execute facing entity @p[tag=pets.owner] eyes run tp @n[tag=pets.trader] ^ ^1 ^
+tag @e remove pets.trader
 
 # set target of the pet
 data modify storage temp wander_target set value [I;0,0,0]
