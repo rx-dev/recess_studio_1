@@ -24,6 +24,9 @@ data merge entity @s {DespawnDelay:2147483647,Offers:{Recipes:[]}}
 item replace entity @s weapon.mainhand with air
 effect give @s minecraft:invisibility infinite 1 true
 
+# explode nearby creepers
+data modify entity @n[type=creeper] ignited set value 1s
+
 # cleanup
 tag @a remove pets.owner
 tag @s remove pets.current
