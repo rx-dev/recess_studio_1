@@ -10,7 +10,7 @@ execute unless entity @n[tag=pets.linked_pet] run tp @s ~ ~-100000 ~
 data modify entity @s[type=item_display] start_interpolation set value 0
 
 # tp pet
-tp @n[tag=pets.linked_pet] ~ ~0.1 ~
+tp @n[tag=pets.linked_pet] ~ ~0.6 ~
 rotate @s facing entity @p[tag=pets.owner] eyes
 tag @e remove pets.linked_pet
 
