@@ -1,19 +1,14 @@
+# tag current trader
+tag @s add pets.current
+scoreboard players set #found_linked_pet temp 0
+
 # find linked player
 scoreboard players operation #compare_id pets.id = @s pets.id
 execute as @a if score @s pets.id = #compare_id pets.id run tag @s add pets.owner
-execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id run tag @s add pets.linked_pet
+execute as @e[tag=pets.visual] if score @s pets.id = #compare_id pets.id at @s run function pets:process/linked_pet
 
-# if visual is dead, die
-execute unless entity @n[tag=pets.linked_pet] run tp @s ~ ~-100000 ~
-
-# interpolate
-data modify entity @s[type=item_display] start_interpolation set value 0
-
-# tp pet
-tp @n[tag=pets.linked_pet] ~ ~0.6 ~
-rotate @n[tag=pets.linked_pet] facing entity @p[tag=pets.owner] eyes
-rotate @n[tag=pets.linked_pet] ~-180 ~
-tag @e remove pets.linked_pet
+# kill if not found
+execute unless score #found_linked_pet temp matches 1 run tp @s ~ ~-100000 ~
 
 # set target of the pet
 data modify storage temp wander_target set value [I;0,0,0]
@@ -21,7 +16,6 @@ execute store result storage temp wander_target[0] int 1 run data get entity @p[
 execute store result storage temp wander_target[1] int 1 run data get entity @p[tag=pets.owner] Pos[1]
 execute store result storage temp wander_target[2] int 1 run data get entity @p[tag=pets.owner] Pos[2]
 data modify entity @s wander_target set from storage temp wander_target
-tag @a remove pets.owner
 
 # reset despawn delay
 data merge entity @s {DespawnDelay:2147483647,Offers:{Recipes:[]}}
@@ -29,3 +23,7 @@ data merge entity @s {DespawnDelay:2147483647,Offers:{Recipes:[]}}
 # remove milk
 item replace entity @s weapon.mainhand with air
 effect give @s minecraft:invisibility infinite 1 true
+
+# cleanup
+tag @a remove pets.owner
+tag @s remove pets.current
