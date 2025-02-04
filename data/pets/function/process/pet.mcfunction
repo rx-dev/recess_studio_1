@@ -25,7 +25,7 @@ item replace entity @s weapon.mainhand with air
 effect give @s minecraft:invisibility infinite 1 true
 
 # explode nearby creepers
-data modify entity @n[type=creeper] ignited set value 1s
+data modify entity @n[type=creeper,distance=..3] ignited set value 1s
 
 # cleanup
 tag @a remove pets.owner
