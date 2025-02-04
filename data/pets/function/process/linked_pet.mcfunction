@@ -15,9 +15,9 @@ execute store result score #y temp run data get entity @s Pos[1]
 execute store result score #z temp run data get entity @s Pos[2]
 
 execute \
-    unless score #x temp = @s pets.prev_x
-    unless score #y temp = @s pets.prev_y
-    unless score #z temp = @s pets.prev_z
+    unless score #x temp = @s pets.prev_x \
+    unless score #y temp = @s pets.prev_y \
+    unless score #z temp = @s pets.prev_z \
     run tag @s add pets.is_moving
 
 scoreboard players operation @s pets.prev_x = #x temp 
