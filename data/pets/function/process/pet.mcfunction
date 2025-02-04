@@ -12,7 +12,7 @@ data modify entity @s[type=item_display] start_interpolation set value 0
 # tp pet
 tp @n[tag=pets.linked_pet] ~ ~0.6 ~
 rotate @n[tag=pets.linked_pet] facing entity @p[tag=pets.owner] eyes
-rotate @n[tag=pets.linked_pet] ~-90 ~
+rotate @n[tag=pets.linked_pet] ~-180 ~
 tag @e remove pets.linked_pet
 
 # set target of the pet
