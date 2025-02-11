@@ -1,12 +1,12 @@
 {
-    "type": "minecraft:nether",
+    "type": "minecraft:the_nether",
     "generator": {
         "type": "minecraft:flat",
         "settings": {
             "biome": "minecraft:plains",
             "layers": [
                 {
-                    "block": "minecraft:tnt",
+                    "block": "minecraft:grass",
                     "height": 1
                 }
             ],
