@@ -1,5 +1,5 @@
 {
-    "type": "studio_1:amonkhet",
+    "type": "studio_1:dominaria",
     "generator": {
         "type": "minecraft:flat",
         "settings": {
@@ -14,8 +14,8 @@
                     "height": 64
                 },
                 {
-                    "block": "minecraft:sand",
-                    "height": 5
+                    "block": "minecraft: grass_block",
+                    "height": 4
                 }
             ],
             "structure_overrides": []
