@@ -1,5 +1,5 @@
 {
-    "type": "studio_1:tnt",
+    "type": "minecraft:nether",
     "generator": {
         "type": "minecraft:flat",
         "settings": {
@@ -9,8 +9,6 @@
                     "block": "minecraft:tnt",
                     "height": 1
                 }
-       
-
             ],
             "structure_overrides": []
         }
