@@ -6,7 +6,7 @@
             "biome": "minecraft:plains",
             "layers": [
                 {
-                    "block": "minecraft:grass_block",
+                    "block": "minecraft:sand_block",
                     "height": 1
                 },
                 {
