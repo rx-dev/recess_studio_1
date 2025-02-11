@@ -1,0 +1,17 @@
+{
+    "type": "studio_1:tnt",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "minecraft:plains",
+            "layers": [
+                {
+                    "block": "minecraft:tnt",
+                    "height": 1
+                }
+    
+            ],
+            "structure_overrides": []
+        }
+    }
+}
