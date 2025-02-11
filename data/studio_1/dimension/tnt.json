@@ -9,7 +9,8 @@
                     "block": "minecraft:tnt",
                     "height": 1
                 }
-    
+       
+
             ],
             "structure_overrides": []
         }
