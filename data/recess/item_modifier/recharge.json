@@ -3,40 +3,40 @@
     "components": {
         "minecraft:charged_projectiles": [
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             },
             {
-                "id": "minecraft:arrow"
+                "id": "minecraft:trident"
             }
         ]
     },
