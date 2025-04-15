@@ -1,2 +1,1 @@
-say [Recess Loaded
-]
+say [Recess Loaded]
