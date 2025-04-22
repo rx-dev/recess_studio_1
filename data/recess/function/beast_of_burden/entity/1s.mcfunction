@@ -7,5 +7,3 @@ execute store result storage recess:main input.damage float 0.5 run scoreboard p
 execute store result storage recess:main input.raw int 1 run scoreboard players get @s recess.nearby_beasts
 
 function recess:beast_of_burden/entity/set_damage with storage recess:main input
-
-particle minecraft:enchanted_hit ~ ~ ~ 0.4 0 0.4 .1 10 normal
