@@ -6,3 +6,4 @@ kill @e[type=splash_potion]
 kill @e[type=#minecraft:arrows]
 
 function recess:beast_of_burden/tick
+function recess:gems/tick
