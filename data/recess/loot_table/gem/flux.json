@@ -10,7 +10,17 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_name": "Flux Gem",
+                                "minecraft:item_name": {
+                                    "text": "Flux Gem",
+                                    "color": "#73EFFF"
+                                },
+                                "minecraft:lore": [
+                                    {
+                                        "text": "Use to shoot a powerful ray!",
+                                        "color": "#0E728D",
+                                        "italic": "false"
+                                    }
+                                ],
                                 "minecraft:enchantment_glint_override": true,
                                 "minecraft:consumable": {
                                     "consume_seconds": 100000,
@@ -24,8 +34,7 @@
                                 "minecraft:custom_data": {
                                     "gem": "flux"
                                 }
-                            },
-                            "conditions": []
+                            }
                         }
                     ]
                 }
