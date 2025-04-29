@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "recess:gems/flux"
+        "function": "recess:gems/flux/on_use"
     }
 }
