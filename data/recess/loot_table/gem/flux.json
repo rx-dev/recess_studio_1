@@ -33,7 +33,16 @@
                                 },
                                 "minecraft:custom_data": {
                                     "gem": "flux"
-                                }
+                                },
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "type": "minecraft:scale",
+                                        "id": "warden",
+                                        "amount": 1.6,
+                                        "operation": "add_value",
+                                        "slot": "hand"
+                                    }
+                                ]
                             }
                         }
                     ]

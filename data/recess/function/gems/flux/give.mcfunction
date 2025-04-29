@@ -1,1 +1,0 @@
-give @s echo_shard[]

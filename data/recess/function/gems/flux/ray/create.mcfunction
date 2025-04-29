@@ -9,4 +9,3 @@ execute anchored eyes positioned ^-0.2 ^ ^ run function recess:gems/flux/ray/ite
 tag @s remove self
 
 # scoreboard players set @s charge 0
-data remove storage recess:data input
