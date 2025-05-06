@@ -10,11 +10,13 @@ execute \
 execute \
     unless block ~ ~ ~ air \
     if score #hit raycast matches 0 \
+    if score #iter raycast matches ..200 \
     summon marker \
     run function recess:gems/flux/init_ray/init_marker
 
 execute \
     if score #iter raycast matches 201.. \
+    summon marker \
     run function recess:gems/flux/init_ray/init_marker
 
 execute \
