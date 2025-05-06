@@ -9,7 +9,6 @@ scoreboard players set #iter raycast 0
 execute \
     anchored eyes \
     facing entity @n[type=marker,tag=flux_end] eyes \
-    positioned ^-0.2 ^ ^ \
     run function recess:gems/flux/ray/iter
 
 tag @s remove self
