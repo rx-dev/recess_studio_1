@@ -42,7 +42,10 @@
                                         "operation": "add_value",
                                         "slot": "hand"
                                     }
-                                ]
+                                ],
+                                "minecraft:use_cooldown": {
+                                    "seconds": 60
+                                }
                             }
                         }
                     ]
