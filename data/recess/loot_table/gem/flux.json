@@ -38,14 +38,11 @@
                                     {
                                         "type": "minecraft:scale",
                                         "id": "warden",
-                                        "amount": 1.6,
+                                        "amount": 0.75,
                                         "operation": "add_value",
                                         "slot": "hand"
                                     }
-                                ],
-                                "minecraft:use_cooldown": {
-                                    "seconds": 60
-                                }
+                                ]
                             }
                         }
                     ]
