@@ -1,5 +1,7 @@
 scoreboard players add #iter raycast 1
 
+particle minecraft:block{block_state: oxidized_copper} ~ ~ ~ .1 .1 .1 0 3 normal
+
 execute \
     positioned ~-0.05 ~-0.05 ~-0.05 \
     as @e[tag=!self,tag=!ray_entity,dx=0] \
