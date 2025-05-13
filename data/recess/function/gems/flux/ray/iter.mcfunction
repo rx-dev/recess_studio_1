@@ -4,8 +4,8 @@ particle minecraft:block{block_state: oxidized_copper} ~ ~ ~ .5 .5 .5 0 4 normal
 particle minecraft:sonic_boom ~ ~ ~ .5 .5 .5 0 1 normal
 
 execute \
-    if entity @s[scores={recess.timer=..15}]
-    as @a[distance=..1,scores={recess.damage_timer=..0}]
+    if entity @s[scores={recess.timer=..15}] \
+    as @a[distance=..1,scores={recess.damage_timer=..0}] \
     run function recess:gems/flux/ray/damage_player
 
 execute \
