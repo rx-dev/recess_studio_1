@@ -1,6 +1,6 @@
 scoreboard players add #iter raycast 1
 
-particle minecraft:block{block_state: oxidized_copper} ~ ~ ~ .5 .5 .5 0 4 normal
+particle minecraft:block{block_state: oxidized_copper} ~ ~ ~ .25 .25 .25 0 1 normal
 
 
 scoreboard players operation $freq temp = #iter raycast
@@ -8,7 +8,7 @@ scoreboard players operation $freq temp %= $freq recess.timer
 scoreboard players operation @s temp = @s recess.timer
 scoreboard players operation @s temp %= $freq temp
 
-execute if score @s temp = #iter raycast run particle minecraft:sonic_boom ~ ~ ~ .5 .5 .5 0 1 normal
+execute if score @s temp = #iter raycast run particle minecraft:sonic_boom ~ ~ ~ .3 .3 .3 0 2 normal
 
 execute \
     if entity @s[scores={recess.timer=..15}] \
