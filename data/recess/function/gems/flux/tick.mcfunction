@@ -4,3 +4,4 @@ scoreboard players add @e[type=marker,tag=flux] recess.timer 1
 kill @e[type=marker,tag=flux,scores={recess.timer=1000..}]
 
 scoreboard players remove @a[scores={recess.timer=1..}] recess.timer 1
+scoreboard players remove @a[scores={recess.damage_timer=1..}] recess.damage_timer 1
