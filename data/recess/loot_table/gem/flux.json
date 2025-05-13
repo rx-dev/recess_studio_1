@@ -42,7 +42,8 @@
                                         "operation": "add_value",
                                         "slot": "hand"
                                     }
-                                ]
+                                ],
+                                "minecraft:max_stack_size": 1
                             }
                         }
                     ]
