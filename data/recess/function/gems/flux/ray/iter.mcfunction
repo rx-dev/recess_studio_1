@@ -8,7 +8,9 @@ scoreboard players operation $freq temp %= $freq recess.timer
 scoreboard players operation @s temp = @s recess.timer
 scoreboard players operation @s temp %= $freq temp
 
-execute if score $freq temp = #iter raycast run particle minecraft:sonic_boom ~ ~ ~ .3 .3 .3 0 4 normal
+execute \
+    if score @s temp = #iter raycast \
+    run particle minecraft:sonic_boom ~ ~ ~ .3 .3 .3 0 4 normal
 
 execute \
     if entity @s[scores={recess.timer=..15}] \
