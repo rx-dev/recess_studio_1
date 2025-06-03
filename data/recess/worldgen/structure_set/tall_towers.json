@@ -1,7 +1,7 @@
 {
     "structures": [
         {
-            "structure": "example:tall_tower",
+            "structure": "recess:tall_tower",
             "weight": 1
         }
     ],
