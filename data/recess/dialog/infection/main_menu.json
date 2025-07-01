@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "Infection",
+    "external_title": "infection",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": "All will be one",
+            "width": 100
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "pause": true,
+    "after_action": "close",
+    "exit_action": {
+        "label": "Back"
+    },
+    "columns": 1,
+    "actions": [
+        {
+            "label": "dont start",
+            "tooltip": "YOU SUCK!",
+            "width": 80,
+            "action": {
+                "type": "run_command",
+                "command": "/say no"
+            }
+        },
+        {
+            "label": "start",
+            "tooltip": "All will be one",
+            "width": 80,
+            "action": {
+                "type": "run_command",
+                "command": "say hi"
+            }
+        }
+    ]
+}

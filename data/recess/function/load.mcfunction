@@ -9,6 +9,10 @@ scoreboard objectives add recess.id dummy
 scoreboard objectives add gem trigger
 scoreboard objectives add temp trigger
 scoreboard objectives add raycast dummy
+scoreboard objectives add infect dummy
+scoreboard objectives add infection.state dummy
 
 scoreboard players set $freq recess.timer 4
 execute unless score #current recess.id matches 0.. run scoreboard players set #current recess.id 0
+
+schedule function recess:infection/wait_for_player 1t replace
