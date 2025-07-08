@@ -1,4 +1,4 @@
-function recess:infection/raycast/start { \
+function recess:raycast/start { \
     steps: 500, \
     step_size: 0.5, \
     on_step: "", \
