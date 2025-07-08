@@ -1,7 +1,13 @@
 {
     "type": "minecraft:multi_action",
-    "title": "Infection",
-    "external_title": "infection",
+    "title": {
+        "text": "Infection",
+        "color": "red"
+    },
+    "external_title": {
+        "text": "Infection",
+        "color": "red"
+    },
     "body": [
         {
             "type": "minecraft:plain_message",

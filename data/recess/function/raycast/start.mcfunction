@@ -16,10 +16,10 @@ scoreboard players set #iter raycast 0
 $data modify storage recess:raycast input set value { \
    steps: $(steps), \
    step_size: $(step_size), \
-   on_step: "$(command)", \
+   on_step: "$(on_step)", \
    on_block_hit: "$(on_block_hit)", \
    on_entity_hit: "$(on_entity_hit)", \
-   entity: "$(entity)" \
+   entity_selector_args: "$(entity_selector_args)" \
 }
 
 function recess:raycast/iter with storage recess:raycast input
