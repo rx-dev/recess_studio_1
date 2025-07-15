@@ -22,3 +22,4 @@ execute if block ~ ~ ~ #air run return 1
 setblock ~ ~ ~ pale_moss_block
 playsound minecraft:block.grass.break master @a ~ ~ ~ 1 .1
 particle minecraft:witch
+say infected!
