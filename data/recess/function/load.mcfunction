@@ -11,6 +11,7 @@ scoreboard objectives add temp trigger
 scoreboard objectives add raycast dummy
 scoreboard objectives add infect dummy
 scoreboard objectives add infection.state dummy
+scoreboard objectives add infection.timer dummy
 
 scoreboard players set $freq recess.timer 4
 execute unless score #current recess.id matches 0.. run scoreboard players set #current recess.id 0

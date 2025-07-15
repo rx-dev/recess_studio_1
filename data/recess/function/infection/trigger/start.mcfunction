@@ -6,3 +6,4 @@ function recess:raycast/start { \
     on_entity_hit: "", \
     entity_selector_args: "" \
 }
+scoreboard players set $ACTIVE infection.state 1
