@@ -9,7 +9,7 @@ scoreboard objectives add recess.id dummy
 scoreboard objectives add gem trigger
 scoreboard objectives add temp trigger
 scoreboard objectives add raycast dummy
-scoreboard objectives add infect dummy
+scoreboard objectives add infect trigger
 scoreboard objectives add infection.state dummy
 scoreboard objectives add infection.timer dummy
 

@@ -30,7 +30,7 @@
             "width": 80,
             "action": {
                 "type": "run_command",
-                "command": "/say no"
+                "command": "say no"
             }
         },
         {
@@ -39,7 +39,7 @@
             "width": 80,
             "action": {
                 "type": "run_command",
-                "command": "say hi"
+                "command": "trigger infect"
             }
         }
     ]
