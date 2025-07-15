@@ -10,11 +10,11 @@ execute \
 scoreboard players add @e[type=marker,tag=recess.infection_start] infection.timer 1
 
 execute \
+    as @e[type=marker,tag=recess.infection_start] \
     if score @s infection.timer matches 4 \
     if predicate {"condition": "random_chance", "chance": 0.4} \
-    at @e[type=marker,tag=recess.infection_start, limit=1] \
     run summon marker ~ ~ ~ {Tags: ["recess.infector"]}
 
 execute as @e[type=marker,tag=recess.infector] at @s run function recess:infection/clock/walk
 
-scoreboard players set @e[type=marker,tag=recess.infection_start,scores={infection.timer=10..}] infection.timer 0
+scoreboard players set @e[type=marker,tag=recess.infection_start,scores={infection.timer=4..}] infection.timer 0
