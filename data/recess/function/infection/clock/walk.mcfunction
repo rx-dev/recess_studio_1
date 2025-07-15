@@ -1,12 +1,12 @@
-# percentage chance to die (still can infect)
-execute if predicate {"condition": "random_chance", "chance": 0.05} run kill @s
-
 # walk
 data modify storage recess:infection input set value {}
 execute store result storage recess:infection input.x int 1 run random value -1..1
 execute store result storage recess:infection input.y int 1 run random value -1..1
 execute store result storage recess:infection input.z int 1 run random value -1..1
 function recess:infection/clock/tp with storage recess:infection input
+
+# percentage chance to die (still can infect)
+execute if predicate {"condition": "random_chance", "chance": 0.05} run kill @s
 
 # do nothing
 execute if block ~ ~ ~ pale_moss_block run return 1
