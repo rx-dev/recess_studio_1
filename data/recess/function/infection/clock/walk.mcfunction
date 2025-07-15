@@ -1,5 +1,5 @@
 # percentage chance to die (still can infect)
-execute if predicate {"condition": "random_chance", "chance": 0.05} run kill @s
+execute if predicate {"condition": "random_chance", "chance": 0.1} run kill @s
 
 # walk
 data modify storage recess:infection input set value {}
