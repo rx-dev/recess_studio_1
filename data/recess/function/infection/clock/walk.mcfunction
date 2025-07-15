@@ -1,5 +1,5 @@
 # percentage chance to die (still can infect)
-execute if predicate {"condition": "random_chance", "chance": 0.1} run kill @s
+execute if predicate {"condition": "random_chance", "chance": 0.05} run kill @s
 
 # walk
 data modify storage recess:infection input set value {}
@@ -22,4 +22,4 @@ execute if block ~ ~ ~ #air run return 1
 setblock ~ ~ ~ pale_moss_block
 playsound minecraft:block.grass.break master @a ~ ~ ~ 1 .1
 particle minecraft:witch
-say infected!
+execute if predicate {"condition": "random_chance", "chance": 0.05} run summon marker ~ ~ ~ {Tags: ["recess.infection_start"]}
