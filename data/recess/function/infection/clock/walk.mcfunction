@@ -10,6 +10,7 @@ function recess:infection/clock/tp with storage recess:infection input
 
 # do nothing
 execute if block ~ ~ ~ pale_moss_block run return 1
+execute if block ~ ~ ~ water run return 1
 
 # reset infector
 execute if block ~ ~ ~ #air run kill @s
@@ -22,4 +23,4 @@ execute if block ~ ~ ~ #air run return 1
 setblock ~ ~ ~ pale_moss_block
 playsound minecraft:block.grass.break master @a ~ ~ ~ 1 .1
 particle minecraft:witch
-execute if predicate {"condition": "random_chance", "chance": 0.05} run summon marker ~ ~ ~ {Tags: ["recess.infection_start"]}
+execute if predicate {"condition": "random_chance", "chance": 0.05} run tag @s add recess.infection_start
