@@ -12,5 +12,4 @@ execute \
     if predicate {"condition": "random_chance", "chance": 0.5} \
     run summon marker ~ ~ ~ {Tags: ["recess.infector"]}
 
-scoreboard players set @e[type=marker,tag=recess.infector] infection.timer 0
 execute as @e[type=marker,tag=recess.infector] at @s run function recess:infection/clock/walk

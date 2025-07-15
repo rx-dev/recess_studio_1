@@ -1,3 +1,5 @@
+scoreboard players set @s infection.timer 0
+
 # walk
 data modify storage recess:infection input set value {}
 execute store result storage recess:infection input.x int 1 run random value -1..1
