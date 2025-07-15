@@ -1,3 +1,3 @@
 scoreboard players enable @a infect
 execute as @a[scores={infect=1..}] run function recess:infection/trigger
-scoreboard players reset @a infect
+scoreboard players set @a infect 0
