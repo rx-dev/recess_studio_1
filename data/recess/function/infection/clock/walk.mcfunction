@@ -24,7 +24,7 @@ execute if block ~ ~ ~ #air run return run function recess:infection/clock/respa
 
 # actually infect
 execute store success score $success temp run setblock ~ ~ ~ pale_moss_block
-execute unless score $success matches 1.. run return run function recess:infection/clock/respawn
+execute unless score $success temp matches 1.. run return run function recess:infection/clock/respawn
 scoreboard players add $BLOCKS_INFECTED infection.state 1
 execute store result storage recess:infection blocks int 1 run scoreboard players get $BLOCKS_INFECTED infection.state
 function recess:infection/clock/update_bossbar with storage recess:infection 
