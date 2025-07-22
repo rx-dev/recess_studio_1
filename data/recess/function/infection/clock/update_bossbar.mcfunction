@@ -1,1 +1,1 @@
-$bossbar add recess:infection {"text": "Infected $(blocks) Blocks"}
+$bossbar set recess:infection name "Infected $(blocks) blocks"
