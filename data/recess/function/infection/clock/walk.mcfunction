@@ -33,4 +33,4 @@ execute store result storage recess:infection blocks int 1 run scoreboard player
 function recess:infection/clock/update_bossbar with storage recess:infection 
 playsound minecraft:block.grass.break master @a ~ ~ ~ 1 .1
 execute align xyz positioned ~ ~1 ~ run particle minecraft:witch
-execute if entity @s if predicate {"condition": "random_chance", "chance": 0.05} run function recess:infection/clock/move
+execute if predicate {"condition": "random_chance", "chance": 0.05} run function recess:infection/clock/move

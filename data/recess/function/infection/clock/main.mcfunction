@@ -1,6 +1,6 @@
 execute \
     if score $ACTIVE infection.state matches 1 \
-    if entity @e[type=marker,tag=recess.infection_start] \
+    if entity @e[type=marker,tag=recess.infector] \
     run schedule function recess:infection/clock/main 1t replace
 
 execute \
