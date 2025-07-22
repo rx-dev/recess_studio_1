@@ -5,7 +5,7 @@ execute \
 
 execute \
     if predicate {"condition": "random_chance", "chance": 0.4} \
-    run particle minecraft:warped_spore ~ ~ ~ .5 .5 .5 .2 1 normal
+    run particle minecraft:warped_spore ~ ~.6 ~ .5 .5 .5 .2 1 normal
 
 execute \
     as @e[type=marker,tag=recess.infection_start] \
