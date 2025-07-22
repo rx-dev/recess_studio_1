@@ -28,6 +28,9 @@ execute if entity @s[tag=infection.die] run return 1
 
 # actually infect
 setblock ~ ~ ~ pale_moss_block
+scoreboard players add $BLOCKS_INFECTED infection.state 1
+execute store result storage recess:infection blocks int 1 run scoreboard players get $BLOCKS_INFECTED infection.state
+function recess:infection/clock/update_bossbar with storage recess:infection 
 playsound minecraft:block.grass.break master @a ~ ~ ~ 1 .1
-particle minecraft:witch
+execute align xyz positioned ~ ~1 ~ run particle minecraft:witch
 execute if entity @s if predicate {"condition": "random_chance", "chance": 0.05} run function recess:infection/clock/move
