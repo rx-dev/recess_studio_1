@@ -30,4 +30,4 @@ execute if entity @s[tag=infection.die] run return 1
 setblock ~ ~ ~ pale_moss_block
 playsound minecraft:block.grass.break master @a ~ ~ ~ 1 .1
 particle minecraft:witch
-execute if predicate {"condition": "random_chance", "chance": 0.05} run function recess:infection/clock/move
+execute if entity @s if predicate {"condition": "random_chance", "chance": 0.05} run function recess:infection/clock/move
