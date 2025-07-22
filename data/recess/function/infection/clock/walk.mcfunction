@@ -18,16 +18,13 @@ execute if predicate {"condition": "random_chance", "chance": 0.01} run kill @s
 execute if block ~ ~ ~ pale_moss_block run return 1
 
 # reset infector
-execute if block ~ ~ ~ water run tag @s add infection.die
-execute if block ~ ~ ~ #air run tag @s add infection.die
-execute if entity @s[tag=infection.die] \
-    at @n[type=marker,tag=recess.infection_start] \
-    run summon marker ~ ~ ~ {Tags: ["recess.infector"]}
-kill @s[tag=infection.die]
-execute if entity @s[tag=infection.die] run return 1
+
+execute if block ~ ~ ~ water run return run function recess:infection/clock/respawn
+execute if block ~ ~ ~ #air run return run function recess:infection/clock/respawn
 
 # actually infect
-setblock ~ ~ ~ pale_moss_block
+execute store success score $success temp run setblock ~ ~ ~ pale_moss_block
+execute unless score $success matches 1.. run return run function recess:infection/clock/respawn
 scoreboard players add $BLOCKS_INFECTED infection.state 1
 execute store result storage recess:infection blocks int 1 run scoreboard players get $BLOCKS_INFECTED infection.state
 function recess:infection/clock/update_bossbar with storage recess:infection 
