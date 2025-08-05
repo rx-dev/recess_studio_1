@@ -5,4 +5,4 @@ execute store result storage recess:temp input.follow_range float 1 run random v
 execute store result storage recess:temp input.max_hp float 1 run random value 5..20
 function recess:infection/mob/set_attributes with storage recess:temp input
 effect give @s minecraft:instant_damage 10 1 true
-spreadplayers ~-5 ~5 1 2
+spreadplayers ~-5 ~5 1 2 false @s
