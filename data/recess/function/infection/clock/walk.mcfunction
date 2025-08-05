@@ -18,8 +18,9 @@ execute if predicate {"condition": "random_chance", "chance": 0.01} run kill @s
 execute if block ~ ~ ~ pale_moss_block run return 1
 
 # reset infector
-execute if block ~ ~ ~ water run return run function recess:infection/clock/respawn
-execute if block ~ ~ ~ #air run return run function recess:infection/clock/respawn
+execute if block ~ ~ ~ water run scoreboard players add @s infection.air_water 1
+execute if block ~ ~ ~ #air run scoreboard players add @s infection.air_water 1
+execute if score @s infection.air_water matches 5.. run function recess:infection/clock/respawn
 
 # actually infect
 execute store success score $success temp run setblock ~ ~ ~ pale_moss_block
