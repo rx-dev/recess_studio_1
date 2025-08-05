@@ -13,3 +13,8 @@ execute \
     run summon marker ~ ~ ~ {Tags: ["recess.infector"]}
 
 execute as @e[type=marker,tag=recess.infector] at @s run function recess:infection/clock/walk
+
+execute \
+    at @e[type=marker,tag=recess.infector] \
+    if predicate {"condition": "random_chance", "chance": 0.05} \
+    run function recess:infection/mob/spawn
