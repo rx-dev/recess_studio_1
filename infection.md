@@ -22,3 +22,13 @@
 infecting a block:
 - set block to infected block (using `setblock` command)
 - set a marker on the block (using `summon` command)
+
+
+## Mobs
+
+- zombies that hit u poison u
+  - sometimes they cough poison clouds
+- skeletons that shoot poison arrows
+- poison spiders
+- infected creepers that explode into a cloud of poison that infects nearby players
+- mobs that spawn on slimes
