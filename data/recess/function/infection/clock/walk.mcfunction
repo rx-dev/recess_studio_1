@@ -22,7 +22,7 @@ execute if block ~ ~ ~ pale_moss_block run return 1
 execute unless predicate recess:check_if_near_air run return run scoreboard players add @s infection.air_water 1
 execute if block ~ ~ ~ water run return run scoreboard players add @s infection.air_water 1
 execute if block ~ ~ ~ #air run return run scoreboard players add @s infection.air_water 1
-execute if score @s infection.air_water matches 5.. run function recess:infection/clock/respawn
+execute if score @s infection.air_water matches 5.. run return run function recess:infection/clock/respawn
 
 # actually infect
 execute store success score $success temp run setblock ~ ~ ~ pale_moss_block
