@@ -15,6 +15,6 @@ execute \
 execute as @e[type=marker,tag=recess.infector] at @s run function recess:infection/clock/walk
 
 execute \
-    at @e[type=marker,tag=recess.infector] \
-    if predicate {"condition": "random_chance", "chance": 0.05} \
+    at @e[type=marker,tag=recess.infector,limit=5,sort=random] \
+    if predicate {"condition": "random_chance", "chance": 0.005} \
     run function recess:infection/mob/spawn
