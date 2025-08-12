@@ -9,6 +9,7 @@ execute \
 
 execute \
     as @e[type=marker,tag=recess.infection_start] \
+    at @s \
     if predicate {"condition": "random_chance", "chance": 0.5} \
     run summon marker ~ ~ ~ {Tags: ["recess.infector"]}
 
