@@ -10,6 +10,7 @@ execute \
     if score $INFECTION_STATIC_STEPS infection.state matches 1000.. \
     run function recess:infection/clock/die
 
+scoreboard players operation $BLOCKS_INFECTED_LAST infection.state = $BLOCKS_INFECTED infection.state
 
 execute \
     if score $ACTIVE infection.state matches 1 \
@@ -32,6 +33,3 @@ execute \
     at @e[type=marker,tag=recess.infector,limit=5,sort=random] \
     if predicate {"condition": "random_chance", "chance": 0.005} \
     run function recess:infection/mob/spawn
-
-
-scoreboard players operation $BLOCKS_INFECTED_LAST infection.state = $BLOCKS_INFECTED infection.state
