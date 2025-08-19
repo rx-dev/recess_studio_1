@@ -6,5 +6,4 @@ execute store result storage recess:temp input.max_hp float 1 run random value 5
 function recess:infection/mob/set_attributes with storage recess:temp input
 effect give @s minecraft:instant_damage 10 1 true
 tag @s add infection.zombie
-tag @s add infection.mob
 spreadplayers ~-5 ~5 1 2 false @s

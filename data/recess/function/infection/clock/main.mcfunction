@@ -33,3 +33,5 @@ execute \
     at @e[type=marker,tag=recess.infector,limit=5,sort=random] \
     if predicate {"condition": "random_chance", "chance": 0.005} \
     run function recess:infection/mob/spawn
+
+execute as @e[tag=infection.mob] at @s run function recess:infection/mob/tick
