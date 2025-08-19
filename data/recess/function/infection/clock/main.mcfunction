@@ -1,13 +1,13 @@
 execute \
     if score $BLOCKS_INFECTED_LAST infection.state = $BLOCKS_INFECTED infection.state \
-    run scoreboard players add $INFECTION_STATIC infection.state 1
+    run scoreboard players add $INFECTION_STATIC_STEPS infection.state 1
 
 execute \
     unless score $BLOCKS_INFECTED_LAST infection.state = $BLOCKS_INFECTED infection.state \
-    run scoreboard players set $INFECTION_STATIC infection.state 0
+    run scoreboard players set $INFECTION_STATIC_STEPS infection.state 0
     
 execute \
-    if score $INFECTION_STATIC infection.state matches 100.. \
+    if score $INFECTION_STATIC_STEPS infection.state matches 100.. \
     run function recess:infection/clock/die
 
 
