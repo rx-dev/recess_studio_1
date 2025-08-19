@@ -7,7 +7,7 @@ execute \
     run scoreboard players set $INFECTION_STATIC_STEPS infection.state 0
     
 execute \
-    if score $INFECTION_STATIC_STEPS infection.state matches 100.. \
+    if score $INFECTION_STATIC_STEPS infection.state matches 1000.. \
     run function recess:infection/clock/die
 
 
