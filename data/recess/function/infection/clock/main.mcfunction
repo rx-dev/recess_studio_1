@@ -1,4 +1,17 @@
 execute \
+    if score $BLOCKS_INFECTED_LAST infection.state = $BLOCKS_INFECTED infection.state \
+    run scoreboard players add $INFECTION_STATIC infection.state 1
+
+execute \
+    unless score $BLOCKS_INFECTED_LAST infection.state = $BLOCKS_INFECTED infection.state \
+    run scoreboard players set $INFECTION_STATIC infection.state 0
+    
+execute \
+    if score $INFECTION_STATIC infection.state matches 100.. \
+    run function recess:infection/clock/die
+
+
+execute \
     if score $ACTIVE infection.state matches 1 \
     if entity @e[type=marker,tag=recess.infection_start] \
     run schedule function recess:infection/clock/main 1t replace
@@ -19,3 +32,6 @@ execute \
     at @e[type=marker,tag=recess.infector,limit=5,sort=random] \
     if predicate {"condition": "random_chance", "chance": 0.005} \
     run function recess:infection/mob/spawn
+
+
+scoreboard players operation $BLOCKS_INFECTED_LAST infection.state = $BLOCKS_INFECTED infection.state
