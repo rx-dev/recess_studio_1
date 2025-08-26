@@ -1,5 +1,5 @@
 {
-    "type": "studio_1:Test",
+    "type": "minecraft:overworld",
     "generator": {
         "type": "minecraft:flat",
         "settings": {
