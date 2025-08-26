@@ -1,1 +1,21 @@
-{Passengers:[{id:"minecraft:item_display",item:{id:"minecraft:pale_moss_block",count:1}}],active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:9999999,show_particles:0b}]}
+tag @s add infection.slime
+tag @s remove infection.mob_spawned
+
+execute store result score $random temp run random value 1..5
+
+execute \
+    if score $random temp matches 1..3 \
+    run data merge entity @s {Size:0}
+
+execute \
+    if score $random temp matches 4..5 \
+    run data merge entity @s {Size:1}
+
+execute \
+    if score $random temp matches 1..3 \
+    data modify entity @s Passengers[0].transformation set value { \
+        left_rotation: [0f,0f,0f,1f], \
+        right_rotation: [0f,0f,0f,1f], \
+        translation: [0f,0f,0f], \
+        scale: [0.25f,0.25f,0.25f] \
+    }

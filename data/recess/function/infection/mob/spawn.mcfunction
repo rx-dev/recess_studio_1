@@ -22,6 +22,7 @@ execute \
         Passengers: [ \
             {id:"minecraft:item_display",item:{id:"minecraft:pale_moss_block"}} \
         ], \
+        Size: 0, \
         Tags: ["infection.mob", "infection.slime", "infection.mob_spawned"] \
     }
 execute \
