@@ -1,0 +1,1 @@
+{Passengers:[{id:"minecraft:item_display",item:{id:"minecraft:pale_moss_block",count:1}}],active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:9999999,show_particles:0b}]}

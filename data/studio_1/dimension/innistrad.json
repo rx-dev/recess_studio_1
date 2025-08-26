@@ -1,0 +1,24 @@
+{
+    "type": "studio_1:amonkhet",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "minecraft:plains",
+            "layers": [
+                {
+                    "block": "minecraft:sand",
+                    "height": 1
+                },
+                {
+                    "block": "minecraft:light_gray_concrete",
+                    "height": 64
+                },
+                {
+                    "block": "minecraft:light_gray_concrete",
+                    "height": 4
+                }
+            ],
+            "structure_overrides": []
+        }
+    }
+}

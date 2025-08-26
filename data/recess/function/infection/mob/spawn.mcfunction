@@ -16,6 +16,15 @@ execute \
 #     if score $random temp 61..80 \
 #     run summon creeper run function recess:infection/mob/creeper/on_spawn
 
-# execute \
-#     if score $random temp 81..100 \
-#     run summon slime run function recess:infection/mob/slime/on_spawn
+execute \
+    if score $random temp matches 81..100 \
+    run summon slime ~ ~ ~ { \
+        Passengers: [ \
+            {id:"minecraft:item_display",item:{id:"minecraft:pale_moss_block"}} \
+        ], \
+        Tags: ["infection.mob", "infection.slime", "infection.mob_spawned"] \
+    }
+execute \
+    if score $random temp matches 81..100 \
+    as @n[type=slime,tag=infection.mob_spawned] \
+    run function recess:infection/mob/slime/on_spawn
