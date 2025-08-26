@@ -1,20 +1,20 @@
 {
-    "type": "studio_1:innistrad",
+    "type": "studio_1:amonkhet",
     "generator": {
         "type": "minecraft:flat",
         "settings": {
-            "biome": "minecraft:light_gray_concrete",
+            "biome": "minecraft:plains",
             "layers": [
                 {
-                    "block": "minecraft:bedrock",
+                    "block": "minecraft:sand",
                     "height": 1
                 },
                 {
-                    "block": "minecraft:stone",
+                    "block": "minecraft:light_gray_concrete",
                     "height": 64
                 },
                 {
-                    "block": "minecraft:grass_block",
+                    "block": "minecraft:light_gray_concrete",
                     "height": 4
                 }
             ],
