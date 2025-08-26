@@ -1,7 +1,7 @@
 execute store result score $random temp run random value 1..100
 
 execute \
-    if score $random temp 1..25 \
+    if score $random temp matches 1..25 \
     run summon zombie run function recess:infection/mob/zombie/on_spawn
 
 # execute \
