@@ -17,8 +17,8 @@ execute \
     run data merge entity @s {transformation: { \
         left_rotation: [0f,0f,0f,1f], \
         right_rotation: [0f,0f,0f,1f], \
-        translation: [0f,0f,0f], \
-        scale: [0.25f,0.25f,0.25f] \
+        translation: [0f,-.125f,0f], \
+        scale: [0.75f,0.75f,0.75f] \
     }}
 
 execute \
