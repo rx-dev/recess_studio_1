@@ -13,7 +13,7 @@ execute \
 
 execute \
     if score $random temp matches 1..3 \
-    data modify entity @s Passengers[0].transformation set value { \
+    run data modify entity @s Passengers[0].transformation set value { \
         left_rotation: [0f,0f,0f,1f], \
         right_rotation: [0f,0f,0f,1f], \
         translation: [0f,0f,0f], \
