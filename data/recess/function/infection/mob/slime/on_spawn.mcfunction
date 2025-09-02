@@ -13,20 +13,20 @@ execute \
 
 execute \
     if score $random temp matches 1..3 \
-    run data modify entity @s Passengers[0].transformation set value { \
+    run data merge entity @n[type=item_display,tag=infection.slime_display] {transformation: { \
         left_rotation: [0f,0f,0f,1f], \
         right_rotation: [0f,0f,0f,1f], \
         translation: [0f,0f,0f], \
         scale: [0.25f,0.25f,0.25f] \
-    }
+    }}
 
 execute \
     if score $random temp matches 4..5 \
-    run data modify entity @s Passengers[0].transformation set value { \
+    run data merge entity @n[type=item_display,tag=infection.slime_display] {transformation: { \
         left_rotation: [0f,0f,0f,1f], \
         right_rotation: [0f,0f,0f,1f], \
-        translation: [0f,-0.75f,0f], \
-        scale: [1.5f,1.5f,1.5f] \
-    }
+        translation: [0f,-0.5f,0f], \
+        scale: [1.25f,1.25f,1.25f] \
+    }}
 
 spreadplayers ~-5 ~5 1 2 false @s
