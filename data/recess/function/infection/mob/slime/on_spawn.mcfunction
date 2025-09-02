@@ -20,4 +20,13 @@ execute \
         scale: [0.25f,0.25f,0.25f] \
     }
 
+execute \
+    if score $random temp matches 1..3 \
+    run data modify entity @s Passengers[0].transformation set value { \
+        left_rotation: [0f,0f,0f,1f], \
+        right_rotation: [0f,0f,0f,1f], \
+        translation: [0f,-0.5f,0f], \
+        scale: [1.25f,1.25f,1.25f] \
+    }
+
 spreadplayers ~-5 ~5 1 2 false @s
