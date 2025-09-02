@@ -30,6 +30,5 @@ execute \
         translation: [0f,-0.25f,0f], \
         scale: [1.5f,1.5f,1.5f] \
     }}
-    
 
 spreadplayers ~-5 ~5 1 2 false @s
