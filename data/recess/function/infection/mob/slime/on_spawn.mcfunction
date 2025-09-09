@@ -32,3 +32,5 @@ execute \
     }}
 
 spreadplayers ~-5 ~5 1 2 false @s
+
+effect give @s minecraft:invisibility infinite 1 true

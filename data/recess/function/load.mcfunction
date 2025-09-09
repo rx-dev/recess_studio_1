@@ -1,4 +1,6 @@
 say [Recess Loaded]
+function quack:api/create_scoreboards
+
 schedule function recess:1s 1s replace
 schedule function recess:5s 5s replace
 
