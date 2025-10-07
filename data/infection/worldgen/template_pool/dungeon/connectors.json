@@ -1,0 +1,78 @@
+{
+	"name": "infection:connectors",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 2,
+			"element": {
+				"projection": "rigid",
+				"element_type": "minecraft:list_pool_element",
+				"elements": [
+					{
+						"weight": 4,
+						"element": {
+							"location": "infection:dungeon/room/dead_end",
+							"processors": "minecraft:empty",
+							"projection": "rigid",
+							"element_type": "minecraft:single_pool_element"
+						}
+					},
+					{
+						"weight": 3,
+						"element": {
+							"location": "infection:dungeon/room/jail",
+							"processors": "minecraft:empty",
+							"projection": "rigid",
+							"element_type": "minecraft:single_pool_element"
+						}
+					},
+					{
+						"weight": 1,
+						"element": {
+							"location": "infection:dungeon/room/mini_hall",
+							"processors": "minecraft:empty",
+							"projection": "rigid",
+							"element_type": "minecraft:single_pool_element"
+						}
+					}
+				]
+			}
+		},
+		{
+			"weight": 2,
+			"element": {
+				"location": "infection:dungeon/connector/straight",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 4,
+			"element": {
+				"location": "infection:dungeon/connector/straight_long",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 3,
+			"element": {
+				"location": "infection:dungeon/connector/corner",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "infection:dungeon/connector/center",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
