@@ -1,5 +1,5 @@
 {
-    "name": "infection:connectors",
+    "name": "infection:dungeon/start",
     "fallback": "minecraft:empty",
     "elements": [
         {
