@@ -1,11 +1,20 @@
 {
-	"name": "infection:dungeon/connectors",
+	"name": "infection:dungeon/rooms",
 	"fallback": "minecraft:empty",
 	"elements": [
 		{
-			"weight": 3,
+			"weight": 4,
 			"element": {
-				"location": "infection:dungeon/connector/straight",
+				"location": "infection:dungeon/room/jail",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"location": "infection:dungeon/room/treasure_box",
 				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
@@ -14,25 +23,16 @@
 		{
 			"weight": 2,
 			"element": {
-				"location": "infection:dungeon/connector/straight_long",
+				"location": "infection:dungeon/room/puzzle",
 				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
 			}
 		},
 		{
-			"weight": 1,
+			"weight": 3,
 			"element": {
-				"location": "infection:dungeon/connector/dark_connector",
-				"processors": "minecraft:empty",
-				"projection": "rigid",
-				"element_type": "minecraft:single_pool_element"
-			}
-		},
-		{
-			"weight": 1,
-			"element": {
-				"location": "infection:dungeon/connector/water",
+				"location": "infection:dungeon/room/dead_end_1",
 				"processors": "minecraft:empty",
 				"projection": "rigid",
 				"element_type": "minecraft:single_pool_element"
