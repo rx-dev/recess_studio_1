@@ -5,7 +5,7 @@
         {
             "weight": 1,
             "element": {
-                "location": "infection:dungeon/center/basic",
+                "location": "infection:dungeon/center/simple",
                 "processors": "minecraft:empty",
                 "projection": "rigid",
                 "element_type": "minecraft:single_pool_element"
