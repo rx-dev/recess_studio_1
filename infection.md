@@ -32,3 +32,8 @@ infecting a block:
 - poison spiders
 - infected creepers that explode into a cloud of poison that infects nearby players
 - mobs that spawn on slimes
+
+
+## Loot Tables
+
+## Chest infection

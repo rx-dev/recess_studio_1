@@ -1,0 +1,46 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " b",
+        "icc",
+        "cf"
+    ],
+    "key": {
+        "b": [
+            "minecraft:bucket"
+        ],
+        "c": [
+            "minecraft:copper_ingot"
+        ],
+        "f": [
+            "minecraft:fire_charge"
+        ],
+        "i": [
+            "minecraft:copper_block"
+        ]
+    },
+    "result": {
+        "id": "minecraft:poisonous_potato",
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "!minecraft:food": {},
+            "minecraft:consumable": {
+                "consume_seconds": 1000000,
+                "animation": "brush",
+                "sound": {
+                    "sound_id": "minecraft:block.fire.extinguish"
+                },
+                "has_consume_particles": false,
+                "on_consume_effects": []
+            },
+            "minecraft:item_model": "minecraft:torchflower",
+            "minecraft:item_name": "Flamethrower",
+            "minecraft:rarity": "rare",
+            "minecraft:max_damage": 101,
+            "minecraft:damage": 100,
+            "minecraft:custom_data": {
+                "item": "flamethrower"
+            }
+        }
+    }
+}
