@@ -7,7 +7,7 @@ execute \
 
 # if we are sneaking, try to refill
 execute \
-    if predicate {"condition": "entity_properties", "predicate": {"type_specific": {"type": "minecraft:player","input": {"sneak": true}}}} \
+    if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"minecraft:player",input:{sneak:1b}}}} \
     run return run function recess:infection/item/flamethrower/refill
 
 # otherwise.. ensure we have fuel
