@@ -28,8 +28,8 @@ execute anchored eyes positioned ^ ^ ^2 run function recess:infection/item/flame
 # durability loss
 execute \
     if score $mainhand temp matches 1 \
-    run item modify entity @s weapon.mainhand {function: "set_damage", damage: -1, add: 1b}
+    run item modify entity @s weapon.mainhand {function: "set_damage", damage: -.01, add: true}
 
 execute \
     unless score $mainhand temp matches 1 \
-    run item modify entity @s weapon.offhand {function: "set_damage", damage: -1, add: 1b}
+    run item modify entity @s weapon.offhand {function: "set_damage", damage: -.01, add: true}
