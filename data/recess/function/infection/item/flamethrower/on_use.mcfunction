@@ -2,7 +2,7 @@ advancement revoke @s only recess:infection/use_flamethrower
 
 # figure out if we are mainhand or offhand
 execute \
-    store result score $mainhand recess.temp \
+    store result score $mainhand temp \
     if items entity @s weapon.mainhand *[custom_data~{item: 'flamethrower'}]
 
 # if we are sneaking, try to refill
@@ -12,12 +12,12 @@ execute \
 
 # otherwise.. ensure we have fuel
 execute \
-    if score $mainhand recess.temp matches 1 \
+    if score $mainhand temp matches 1 \
     if items entity @s weapon.mainhand *[damage~{durability:{max: 0}}] \
     run return run function recess:infection/item/flamethrower/empty
 
 execute \
-    unless score $mainhand recess.temp matches 1 \
+    unless score $mainhand temp matches 1 \
     if items entity @s weapon.offhand *[damage~{durability:{max: 0}}] \
     run return run function recess:infection/item/flamethrower/empty
 
@@ -27,9 +27,9 @@ execute anchored eyes positioned ^ ^ ^2 run function recess:infection/item/flame
 
 # durability loss
 execute \
-    if score $mainhand recess.temp matches 1 \
+    if score $mainhand temp matches 1 \
     item modify entity @s weapon.mainhand {function: "set_damage", damage: -1, add: 1b}
 
 execute \
-    unless score $mainhand recess.temp matches 1 \
+    unless score $mainhand temp matches 1 \
     item modify entity @s weapon.offhand {function: "set_damage", damage: -1, add: 1b}
