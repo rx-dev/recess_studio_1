@@ -1,5 +1,7 @@
 advancement revoke @s only recess:infection/use_flamethrower
 
+tag @s add self
+
 # figure out if we are mainhand or offhand
 execute \
     store result score $mainhand temp \
@@ -7,6 +9,8 @@ execute \
 
 # if we are sneaking, try to refill
 execute \
+    if score $mainhand temp matches 1 \
+    if items entity @s weapon.offhand minecraft:lava_bucket \
     if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"minecraft:player",input:{sneak:1b}}}} \
     run return run function recess:infection/item/flamethrower/refill
 
@@ -23,13 +27,15 @@ execute \
 
 
 # spew flames!
-execute anchored eyes positioned ^ ^ ^2 run function recess:infection/item/flamethrower/flames
+execute anchored eyes positioned ^ ^ ^2.5 run function recess:infection/item/flamethrower/flames
 
 # durability loss
 execute \
     if score $mainhand temp matches 1 \
-    run item modify entity @s weapon.mainhand {function: "set_damage", damage: -.01, add: true}
+    run item modify entity @s weapon.mainhand {function: "set_damage", damage: -.001, add: true}
 
 execute \
     unless score $mainhand temp matches 1 \
-    run item modify entity @s weapon.offhand {function: "set_damage", damage: -.01, add: true}
+    run item modify entity @s weapon.offhand {function: "set_damage", damage: -.001, add: true}
+
+tag @s remove self
