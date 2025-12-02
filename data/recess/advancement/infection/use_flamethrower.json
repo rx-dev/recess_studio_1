@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "minecraft:custom_data": "{item: 'flamethrower'}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "recess:infection/item/flamethrower/on_use"
+    }
+}

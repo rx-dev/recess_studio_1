@@ -7,7 +7,7 @@
     ],
     "key": {
         "b": [
-            "minecraft:bucket"
+            "minecraft:lava_bucket"
         ],
         "c": [
             "minecraft:copper_ingot"
@@ -36,8 +36,8 @@
             "minecraft:item_model": "minecraft:torchflower",
             "minecraft:item_name": "Flamethrower",
             "minecraft:rarity": "rare",
-            "minecraft:max_damage": 101,
-            "minecraft:damage": 100,
+            "minecraft:max_damage": 1000,
+            "minecraft:damage": 0,
             "minecraft:custom_data": {
                 "item": "flamethrower"
             }
