@@ -19,3 +19,5 @@ playsound minecraft:block.fire.ambient player @a ~ ~ ~ .4 2
 execute if predicate {condition: "random_chance", chance: 0.5} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .4 1.5
 execute if predicate {condition: "random_chance", chance: 0.1} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .6 .1
 execute if predicate {condition: "random_chance", chance: 0.3} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .87 1
+
+execute if block ~ ~-1 ~ minecraft:pale_moss_block run setblock ~ ~-1 ~ minecraft:moss_block replace
