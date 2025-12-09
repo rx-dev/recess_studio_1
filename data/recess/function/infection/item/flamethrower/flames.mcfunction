@@ -1,12 +1,12 @@
 #> from ./on_use
 
 # set on fire
-execute as @e[distance=..0.1,type=!player] run function recess:infection/item/flamethrower/set_entity_on_fire
+execute as @e[distance=..1,type=!player] run function recess:infection/item/flamethrower/set_entity_on_fire
 
 # fire dmg (every few ticks)
-execute as @e[distance=..0.1,tag=!self] unless score @s infection.in_flamethrower matches 1.. run damage @s 2 in_fire
-execute as @e[distance=..0.1,tag=!self] run scoreboard players set @s[scores={infection.in_flamethrower=0}] infection.in_flamethrower 10
-execute as @e[distance=..0.1,tag=!self] run scoreboard players remove @s[scores={infection.in_flamethrower=1..}] infection.in_flamethrower 1
+execute as @e[distance=..1,tag=!self] unless score @s infection.in_flamethrower matches 1.. run damage @s 2 in_fire
+execute as @e[distance=..1,tag=!self] run scoreboard players set @s[scores={infection.in_flamethrower=0}] infection.in_flamethrower 10
+execute as @e[distance=..1,tag=!self] run scoreboard players remove @s[scores={infection.in_flamethrower=1..}] infection.in_flamethrower 1
 
 # av
 particle small_flame ~ ~ ~ .15 .025 .15 0 5
