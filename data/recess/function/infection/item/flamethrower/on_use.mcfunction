@@ -31,11 +31,13 @@ execute anchored eyes positioned ^ ^ ^2.5 run function recess:infection/item/fla
 
 # durability loss
 execute \
+    if entity @s[gamemode=!creative] \
     if score $mainhand temp matches 1 \
     if predicate {condition: "random_chance", chance: 0.25} \
     run item modify entity @s weapon.mainhand {function: "set_damage", damage: -.01, add: true}
 
 execute \
+    if entity @s[gamemode=!creative] \
     unless score $mainhand temp matches 1 \
     if predicate {condition: "random_chance", chance: 0.25} \
     run item modify entity @s weapon.offhand {function: "set_damage", damage: -.01, add: true}
