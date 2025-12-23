@@ -40,6 +40,9 @@
             "minecraft:damage": 0,
             "minecraft:custom_data": {
                 "item": "flamethrower"
+            },
+            "minecraft:use_effects": {
+                "can_sprint": true
             }
         }
     }

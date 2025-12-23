@@ -1,9 +1,9 @@
 #> from ../tick
 
 scoreboard players add @s infection.flame_lifetime 1
-kill @s[scores={infection.flame_lifetime=15..}]
+kill @s[scores={infection.flame_lifetime=10..}]
 
-rotate @s ~ ~1.5
+rotate @s ~ ~2
 function recess:raycast/start { \
     steps: 5, \
     step_size: 0.5, \
