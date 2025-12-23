@@ -26,9 +26,9 @@ execute \
     run return run function recess:infection/item/flamethrower/empty
 
 data modify storage infection:temp input set value {}
-execute store result storage infection:temp input.x double 0.002 run random value -400..400
-execute store result storage infection:temp input.y double 0.002 run random value -400..400
-execute store result storage infection:temp input.z double 0.002 run random value -400..400
+execute store result storage infection:temp input.x double 0.002 run random value -100..100
+execute store result storage infection:temp input.y double 0.002 run random value -100..100
+execute store result storage infection:temp input.z double 0.002 run random value -100..100
 execute store result storage infection:temp input.roll double 0.2 run random value -20..20
 execute store result storage infection:temp input.pitch double 0.2 run random value -20..20
 execute \
