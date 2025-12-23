@@ -1,6 +1,7 @@
 advancement revoke @s only recess:infection/use_flamethrower
 
 tag @s add self
+scoreboard players operation #id temp = @s recess.id
 
 # figure out if we are mainhand or offhand
 execute \
