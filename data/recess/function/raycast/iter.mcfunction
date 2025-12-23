@@ -10,7 +10,8 @@
 
 scoreboard players add #iter raycast 1
 
-$execute unless data storage recess:raycast input{on_step: ""} run function recess:raycast/call_command {command: "$(on_step)"}
+$execute unless data storage recess:raycast input{on_step: ""} \
+    run function recess:raycast/call_command {command: "$(on_step)"}
 
 $execute \
     unless data storage recess:raycast input{on_entity_hit: ""} \

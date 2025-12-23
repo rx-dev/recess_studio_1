@@ -3,7 +3,7 @@
 scoreboard players add @s infection.flame_lifetime 1
 kill @s[scores={infection.flame_lifetime=20..}]
 
-rotate ~ ~-1
+rotate @s ~ ~1
 function recess:raycast/start { \
     steps: 10, \
     step_size: 0.1, \
