@@ -17,7 +17,8 @@ $execute \
     unless data storage recess:raycast input{on_entity_hit: ""} \
     positioned ~-0.05 ~-0.05 ~-0.05 \
     as @e[tag=!self,dx=0$(entity_selector_args)] \
-    run function recess:raycast/check_entity_hit {function: "$(on_entity_hit)"}
+    if function recess:raycast/check_entity_hit
+    run function recess:raycast/hit {function: "$(on_entity_hit)"}
 
 $execute \
     unless data storage recess:raycast input{on_block_hit: ""} \
