@@ -10,5 +10,5 @@ function recess:raycast/start { \
     on_step: "function recess:infection/item/flamethrower/flame_step", \
     on_block_hit: "function recess:infection/item/flamethrower/flame_block_hit", \
     on_entity_hit: "function recess:infection/item/flamethrower/flame_entity_hit", \
-    entity_selector_args: ",type=!marker,tag=!infection.flamethrower_flame" \
+    entity_selector_args: ",type=!marker" \
 }

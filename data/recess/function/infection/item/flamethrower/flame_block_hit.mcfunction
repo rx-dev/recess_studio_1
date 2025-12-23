@@ -1,4 +1,4 @@
 #> from ./on_use (via ../raycast/start)
 
-execute if block ~ ~ ~ minecraft:pale_moss_block run setblock ~ ~ ~ minecraft:moss_block replace
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 moss_block replace minecraft:pale_moss_block destroy
 kill @s
