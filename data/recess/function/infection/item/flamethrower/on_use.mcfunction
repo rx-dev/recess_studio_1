@@ -25,9 +25,13 @@ execute \
     if items entity @s weapon.offhand *[damage~{durability:{max: 0}}] \
     run return run function recess:infection/item/flamethrower/empty
 
-
-# spew flames!
-execute anchored eyes positioned ^ ^ ^2.5 run function recess:infection/item/flamethrower/flames
+data modify storage infection:temp input set value {}
+execute store result storage infection:temp input.x double 0.02 run random value -400..400
+execute store result storage infection:temp input.y double 0.02 run random value -400..400
+execute store result storage infection:temp input.z double 0.02 run random value -400..400
+execute store result storage infection:temp input.roll double 0.2 run random value -20..20
+execute store result storage infection:temp input.pitch double 0.2 run random value -20..20
+execute rotated as @s anchored eyes positioned ^ ^ ^0.5 summon marker run function recess:infection/item/flamethrower/init_flame with storage infection:temp input
 
 # durability loss
 execute \

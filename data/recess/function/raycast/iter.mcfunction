@@ -13,7 +13,6 @@ scoreboard players add #iter raycast 1
 $execute unless data storage recess:raycast input{on_step: ""} run function recess:raycast/call_command {command: "$(on_step)"}
 
 $execute \
-    unless data storage recess:raycast input{entity_selector_args: ""} \
     unless data storage recess:raycast input{on_entity_hit: ""} \
     positioned ~-0.05 ~-0.05 ~-0.05 \
     as @e[tag=!self,dx=0$(entity_selector_args)] \
