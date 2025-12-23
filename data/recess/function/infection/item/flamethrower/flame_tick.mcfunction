@@ -3,7 +3,7 @@
 scoreboard players operation #id temp = @s recess.id
 execute \
     as @a \
-    if score @s recess.id matches #id temp \
+    if score @s recess.id = #id temp \
     run tag @s add infection.ignore_flamethrower
 
 scoreboard players add @s infection.flame_lifetime 1
