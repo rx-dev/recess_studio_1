@@ -1,0 +1,81 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:emerald"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3,
+                  "min": 1
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:iron_leggings",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3,
+                  "min": 1
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:fire_charge"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 3,
+                  "min": 1
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:lava_bucket"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 1,
+                  "min": 1
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:trapped_chest"
+          }
+        ],
+        "rolls": {
+          "type": "minecraft:uniform",
+          "max": 5,
+          "min": 1
+        }
+      }
+    ],
+    "random_sequence": "minecraft:chests/village/village_fisher"
+  }
