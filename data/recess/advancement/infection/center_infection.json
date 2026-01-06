@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "infection:dungeon/center"
+            }
+        }
+    },
+    "rewards": {
+        "function": "recess:infection/start_infection"
+    }
+}
