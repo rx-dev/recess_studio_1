@@ -68,7 +68,24 @@
               }
             ],
             "name": "minecraft:trapped_chest"
+          },
+          {
+            "type": "minecraft:item",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 1,
+                  "min": 1
+                },
+                "function": "minecraft:set_count"
+              }
+            ],
+            "name": "minecraft:creeper_head"
           }
+
+        
         ],
         "rolls": {
           "type": "minecraft:uniform",
