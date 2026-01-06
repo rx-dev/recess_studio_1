@@ -5,7 +5,7 @@ tellraw @s [ \
 ]
 
 tellraw @s [ \
-    {atlas: "items", sprite: "item/copper_block"}, \
+    {atlas: "blocks", sprite: "block/copper_block"}, \
     {atlas: "items", sprite: "item/copper_ingot"}, \
     {atlas: "items", sprite: "item/copper_ingot"}, \
 ]
