@@ -1,4 +1,4 @@
-say [Recess Loaded]
+tellraw @a {text:"[Infection Datapack Loaded]",color:"yellow"}
 function quack:api/create_scoreboards
 
 schedule function recess:1s 1s replace
@@ -20,5 +20,3 @@ scoreboard objectives add infection.in_flamethrower dummy
 
 scoreboard players set $freq recess.timer 4
 execute unless score #current recess.id matches 0.. run scoreboard players set #current recess.id 0
-
-schedule function recess:infection/wait_for_player 1t replace
