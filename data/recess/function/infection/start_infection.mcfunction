@@ -17,7 +17,7 @@ tellraw @a [\
                         {text: "A makeshift flamethrower built from scrap.", color: "gray"}, \
                         {text: "Effective at burning away infection and mobs.", color: "gray"} \
                     ], \
-                    rarity: "rare", \
+                    rarity: "rare" \
                 } \
             } \
         }, \
