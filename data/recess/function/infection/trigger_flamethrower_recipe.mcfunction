@@ -35,3 +35,4 @@ tellraw @a [ \
     }, \
     {text: " to stop it from spreading!", color: "red"} \
 ]
+scoreboard players set @s flamethrower_recipe 0
