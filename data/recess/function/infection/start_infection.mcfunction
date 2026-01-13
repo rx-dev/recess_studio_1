@@ -12,7 +12,7 @@ tellraw @a [ \
             components: { \
                 item_model: "minecraft:torchflower", \
                 item_name: "Flamethrower", \
-                item_lore: [ \
+                lore: [ \
                     {text: "A makeshift flamethrower built from scrap.", color: "gray"}, \
                     {text: "Effective at burning away infection and mobs.", color: "gray"} \
                 ], \
