@@ -13,8 +13,19 @@ tellraw @a [ \
                 item_model: "minecraft:torchflower", \
                 item_name: "Flamethrower", \
                 lore: [ \
-                    {text: "A makeshift flamethrower built from scrap.", color: "gray"}, \
-                    {text: "Effective at burning away infection and mobs.", color: "gray"} \
+                    {text: "A makeshift flamethrower built from scrap.", color: "gray", italic: false}, \
+                    {text: "Effective at burning away infection and mobs.", color: "gray", italic: false}, \
+                    "", \
+                    {text: "Crafting Recipe:", color: "white", italic: false}, \
+                    " ", " ", \
+                    {atlas: "items", sprite: "item/lava_bucket"}, \
+                    " ", " ", \
+                    {atlas: "blocks", sprite: "block/copper_block"}, \
+                    {atlas: "items", sprite: "item/copper_ingot"}, \
+                    {atlas: "items", sprite: "item/copper_ingot"}, \
+                    {atlas: "items", sprite: "item/copper_ingot"}, \
+                    {atlas: "items", sprite: "item/fire_charge"}, \
+                    " ", " " \
                 ], \
                 rarity: "rare" \
             } \
