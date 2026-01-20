@@ -9,7 +9,7 @@ execute if predicate {condition: "random_chance", chance: 0.1} run particle flam
 execute if predicate {condition: "random_chance", chance: 0.1} run particle flame ~ ~ ~ .3 .3 .3 0 1
 execute if predicate {condition: "random_chance", chance: 0.05} run particle flame ~ ~ ~ 0 0 0 0 1
 
-execute if predicate {condition: "random_chance", chance: 0.2} run playsound minecraft:block.fire.ambient player @a ~ ~ ~ .05 2
-execute if predicate {condition: "random_chance", chance: 0.3} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .3 1.5
+execute if predicate {condition: "random_chance", chance: 0.1} run playsound minecraft:block.fire.ambient player @a ~ ~ ~ .05 2
+execute if predicate {condition: "random_chance", chance: 0.15} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .3 1.5
 execute if predicate {condition: "random_chance", chance: 0.05} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .2 .1
-execute if predicate {condition: "random_chance", chance: 0.1} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .37 1
+execute if predicate {condition: "random_chance", chance: 0.05} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .37 1
