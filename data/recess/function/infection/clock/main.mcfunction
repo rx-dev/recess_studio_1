@@ -14,7 +14,6 @@ scoreboard players operation $BLOCKS_INFECTED_LAST infection.state = $BLOCKS_INF
 
 execute \
     if score $ACTIVE infection.state matches 1 \
-    if entity @e[type=marker,tag=recess.infection_start] \
     run schedule function recess:infection/clock/main 1t replace
 
 execute \
