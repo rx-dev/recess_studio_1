@@ -35,3 +35,5 @@ execute \
     run function recess:infection/mob/spawn
 
 execute as @e[tag=infection.mob] at @s run function recess:infection/mob/tick
+
+execute store result bossbar recess:infection value run scoreboard players get $INFECTION_STATIC_STEPS infection.state
