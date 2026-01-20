@@ -4,6 +4,7 @@ execute \
 
 execute \
     unless score $BLOCKS_INFECTED_LAST infection.state = $BLOCKS_INFECTED infection.state \
+    if score $INFECTION_STATIC_STEPS infection.state matches 0.. \
     run scoreboard players remove $INFECTION_STATIC_STEPS infection.state 25
     
 execute \
