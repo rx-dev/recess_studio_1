@@ -20,3 +20,5 @@ scoreboard objectives add flamethrower_recipe trigger
 
 scoreboard players set $freq recess.timer 4
 execute unless score #current recess.id matches 0.. run scoreboard players set #current recess.id 0
+
+bossbar set recess:infection max 1000
