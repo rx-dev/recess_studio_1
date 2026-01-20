@@ -54,3 +54,8 @@ execute \
     run item modify entity @s weapon.offhand {function: "set_damage", damage: -.01, add: true}
 
 tag @s remove self
+
+execute if predicate {condition: "random_chance", chance: 0.3} run playsound minecraft:block.fire.ambient player @a ~ ~ ~ .05 2
+execute if predicate {condition: "random_chance", chance: 0.15} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .3 1.5
+execute if predicate {condition: "random_chance", chance: 0.35} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .2 .1
+execute if predicate {condition: "random_chance", chance: 0.05} run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ .37 1
