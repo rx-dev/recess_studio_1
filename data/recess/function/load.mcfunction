@@ -17,6 +17,9 @@ scoreboard objectives add infection.air_water dummy
 scoreboard objectives add infection.mob_timer dummy
 scoreboard objectives add infection.in_flamethrower dummy
 scoreboard objectives add flamethrower_recipe trigger
+scoreboard objectives add const dummy
+scoreboard players set $25 const dummy 25
+scoreboard players set $100 const dummy 100
 
 scoreboard players set $freq recess.timer 4
 execute unless score #current recess.id matches 0.. run scoreboard players set #current recess.id 0
