@@ -1,5 +1,5 @@
 {
-	"biomes": "#infection:has_structure/dungeon",
+	"biomes": "#minecraft:is_overworld",
 	"adapt_noise": false,
 	"liquid_settings": "ignore_waterlogging",
 	"spawn_overrides": {},
