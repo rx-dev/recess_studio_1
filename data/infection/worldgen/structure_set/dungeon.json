@@ -1,0 +1,16 @@
+{
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 20,
+        "separation": 4,
+        "spread_type": "triangular",
+        "salt": 2,
+        "frequency": 0.4
+    },
+    "structures": [
+        {
+            "structure": "infection:dungeon",
+            "weight": 1
+        }
+    ]
+}
