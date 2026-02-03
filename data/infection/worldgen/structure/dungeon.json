@@ -32,5 +32,6 @@
 		}
 	},
 	"terrain_adaptation": "encapsulate",
-	"use_expansion_hack": true
+	"use_expansion_hack": true,
+	"start_jigsaw_name": "infection:dungeon/connector"
 }
