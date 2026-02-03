@@ -5,7 +5,21 @@
 	"max_distance_from_center": 10,
 	"liquid_settings": "ignore_waterlogging",
 	"spawn_overrides": {},
-	"start_pool": "infection:dungeon/start",
+	"start_pool": {
+		"name": "infection:dungeon/start",
+		"fallback": "minecraft:empty",
+		"elements": [
+			{
+				"weight": 1,
+				"element": {
+					"location": "infection:dungeon/center/simple",
+					"processors": "minecraft:empty",
+					"projection": "rigid",
+					"element_type": "minecraft:single_pool_element"
+				}
+			}
+		]
+	},
 	"size": 7,
 	"step": "underground_structures",
 	"start_height": {
