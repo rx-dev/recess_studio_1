@@ -20,7 +20,7 @@
 			}
 		]
 	},
-	"size": 3,
+	"size": 6,
 	"step": "underground_structures",
 	"project_start_to_heightmap": "WORLD_SURFACE_WG",
 	"start_height": {
