@@ -35,9 +35,9 @@ scoreboard players set #point_3_z value 100
 
 # Get structure distances
 
-execute store result score #point_1_distance value positioned ~000 ~ ~000 run locate infection:dungeon
-execute store result score #point_2_distance value positioned ~100 ~ ~000 run locate infection:dungeon
-execute store result score #point_3_distance value positioned ~000 ~ ~100 run locate infection:dungeon
+execute store result score #point_1_distance value positioned ~000 ~ ~000 run locate structure infection:dungeon
+execute store result score #point_2_distance value positioned ~100 ~ ~000 run locate structure infection:dungeon
+execute store result score #point_3_distance value positioned ~000 ~ ~100 run locate structure infection:dungeon
 
 
 
