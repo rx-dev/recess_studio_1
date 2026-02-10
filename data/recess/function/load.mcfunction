@@ -19,8 +19,10 @@ scoreboard objectives add infection.in_flamethrower dummy
 scoreboard objectives add flamethrower_recipe trigger
 scoreboard objectives add const dummy
 scoreboard objectives add infection.joined_world dummy
+scoreboard objectives add infection.used_carrot_on_a_stick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard players set $25 const 25
 scoreboard players set $100 const 100
+
 
 scoreboard players set $freq recess.timer 4
 execute unless score #current recess.id matches 0.. run scoreboard players set #current recess.id 0

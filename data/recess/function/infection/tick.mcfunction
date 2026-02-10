@@ -7,3 +7,8 @@ execute as @e[type=marker,tag=infection.flamethrower_flame] at @s run function r
 
 scoreboard players add @a infection.joined_world 0
 execute as @a[scores={infection.joined_world=..0}] run function recess:infection/give_compass
+execute \
+    as @a[scores={infection.used_carrot_on_a_stick=1..}] \
+    if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data~{infection_dungeon_finder: true}] \
+    run function recess:infection/compass/update_holding
+scoreboard players reset @a infection.used_carrot_on_a_stick
