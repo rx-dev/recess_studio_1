@@ -18,6 +18,7 @@ scoreboard objectives add infection.mob_timer dummy
 scoreboard objectives add infection.in_flamethrower dummy
 scoreboard objectives add flamethrower_recipe trigger
 scoreboard objectives add const dummy
+scoreboard objectives add infection.joined_world dummy
 scoreboard players set $25 const 25
 scoreboard players set $100 const 100
 
