@@ -6,19 +6,19 @@ execute \
 
 execute \
     if score $random temp matches 26..45 \
-    run summon skeleton run function recess:infection/mob/skeleton/on_spawn
+    summon skeleton run function recess:infection/mob/skeleton/on_spawn
 
 execute \
     if score $random temp matches 46..60 \
-    run summon cave_spider
+    summon cave_spider
 
 execute \
     if score $random temp matches 61..80 \
-    run summon wandering_trader run function recess:infection/mob/ghost/on_spawn
+    summon wandering_trader run function recess:infection/mob/ghost/on_spawn
 
 execute \
     if score $random temp matches 81..100 \
-    run summon slime ~ ~ ~ { \
+    summon slime ~ ~ ~ { \
         Passengers: [ \
             {id:"minecraft:item_display",item:{id:"minecraft:pale_moss_block"}, Tags: ["infection.slime_display", "infection.mob"]} \
         ], \
