@@ -37,3 +37,18 @@ infecting a block:
 ## Loot Tables
 
 ## Chest infection
+
+## Playtest thoughts
+
+- Boss mob
+  - Spews globs of infection
+  - .
+- more mob spawning
+- Different mobs that spawn
+- infection stays near player
+- bossbar wasn't working
+- flamethrower can refill from lava without using lava
+- slimes are invisible
+- water mob
+- mobs in the dungeon
+- infected effect
