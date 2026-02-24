@@ -6,5 +6,5 @@ execute if entity @s[scores={infection.ghost_movement_timer=50..}] run data modi
 scoreboard players set @s[scores={infection.ghost_movement_timer=50..}] infection.ghost_movement_timer 0
 
 # despawn if mannequin dies (return if we have a mannequin)
-execute on mannequin run return 1
+execute on passengers run return 1
 tp @s ~ ~-100000 ~

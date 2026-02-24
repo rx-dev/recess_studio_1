@@ -5,15 +5,15 @@ execute \
     summon zombie run function recess:infection/mob/zombie/on_spawn
 
 execute \
-    if score $random temp 26..45 \
+    if score $random temp matches 26..45 \
     run summon skeleton run function recess:infection/mob/skeleton/on_spawn
 
 execute \
-    if score $random temp 46..60 \
+    if score $random temp matches 46..60 \
     run summon cave_spider
 
 execute \
-    if score $random temp 61..80 \
+    if score $random temp matches 61..80 \
     run summon wandering_trader run function recess:infection/mob/ghost/on_spawn
 
 execute \
