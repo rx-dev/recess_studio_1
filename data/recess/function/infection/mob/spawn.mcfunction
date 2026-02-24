@@ -4,17 +4,17 @@ execute \
     if score $random temp matches 1..25 \
     summon zombie run function recess:infection/mob/zombie/on_spawn
 
-# execute \
-#     if score $random temp 26..45 \
-#     run summon skeleton run function recess:infection/mob/skeleton/on_spawn
+execute \
+    if score $random temp 26..45 \
+    run summon skeleton run function recess:infection/mob/skeleton/on_spawn
 
-# execute \
-#     if score $random temp 46..60 \
-#     run summon cave_spider
+execute \
+    if score $random temp 46..60 \
+    run summon cave_spider
 
-# execute \
-#     if score $random temp 61..80 \
-#     run summon creeper run function recess:infection/mob/creeper/on_spawn
+execute \
+    if score $random temp 61..80 \
+    run summon wandering_trader run function recess:infection/mob/ghost/on_spawn
 
 execute \
     if score $random temp matches 81..100 \

@@ -20,6 +20,8 @@ scoreboard objectives add flamethrower_recipe trigger
 scoreboard objectives add const dummy
 scoreboard objectives add infection.joined_world dummy
 scoreboard objectives add infection.used_carrot_on_a_stick minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add infection.spawn_timer dummy
+scoreboard objectives add infection.ghost_movement_timer dummy
 scoreboard players set $25 const 25
 scoreboard players set $100 const 100
 
