@@ -1,6 +1,7 @@
 # @s: wandering trader
 
 execute store result score @s infection.ghost_id run scoreboard players add #current infection.ghost_id 1
+item replace entity @s weapon.mainhand with air
 
 # make wandering trader invuln, invis, silent, small
 attribute @s minecraft:scale base set 0.9
