@@ -4,7 +4,7 @@ execute store result score @s infection.ghost_id run scoreboard players add #cur
 
 # make wandering trader invuln, invis, silent, small
 attribute @s minecraft:scale base set 0.1
-data merge entity @s {Invulnerable:1b, Silent:1b, Tags: ["infection.ghost_brain"]}
+data merge entity @s {Invulnerable:1b, Silent:1b, Tags: ["infection.mob", "infection.ghost_brain"]}
 effect give @s minecraft:invisibility infinite 1 true
 
 # summon visual ghost
