@@ -22,6 +22,7 @@ scoreboard objectives add infection.joined_world dummy
 scoreboard objectives add infection.used_carrot_on_a_stick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add infection.spawn_timer dummy
 scoreboard objectives add infection.ghost_movement_timer dummy
+scoreboard objectives add infection.ghost_id dummy
 scoreboard players set $25 const 25
 scoreboard players set $100 const 100
 
@@ -30,5 +31,6 @@ bossbar add recess:infection {text: "Infection", color: "red"}
 
 scoreboard players set $freq recess.timer 4
 execute unless score #current recess.id matches 0.. run scoreboard players set #current recess.id 0
+execute unless score #current infection.ghost_id matches 0.. run scoreboard players set #current infection.ghost_id 0
 
 bossbar set recess:infection max 1000
