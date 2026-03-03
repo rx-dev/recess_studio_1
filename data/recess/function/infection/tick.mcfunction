@@ -12,3 +12,5 @@ execute \
     if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data~{infection_dungeon_finder: true}] \
     run function recess:infection/compass/update_holding
 scoreboard players reset @a infection.used_carrot_on_a_stick
+
+execute as @e[tag=infection.mob] at @s run function recess:infection/mob/tick
