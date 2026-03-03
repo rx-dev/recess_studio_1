@@ -23,6 +23,7 @@ scoreboard objectives add infection.used_carrot_on_a_stick minecraft.used:minecr
 scoreboard objectives add infection.spawn_timer dummy
 scoreboard objectives add infection.ghost_movement_timer dummy
 scoreboard objectives add infection.ghost_id dummy
+scoreboard objectives add infection.ghost_trail_timer dummy
 scoreboard players set $25 const 25
 scoreboard players set $100 const 100
 
