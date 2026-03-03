@@ -11,7 +11,7 @@ execute if entity @s[scores={infection.ghost_movement_timer=50..}] run data modi
 scoreboard players set @s[scores={infection.ghost_movement_timer=50..}] infection.ghost_movement_timer 0
 
 # poison ghost trail
-execute if entity @s[scores={infection.ghost_movement_timer=30..}] run summon marker ~ ~.75 ~ {Tags:["infection.mob", "infection.ghost_trail"]}
+execute if entity @s[scores={infection.ghost_movement_timer=30}] run summon marker ~ ~.75 ~ {Tags:["infection.mob", "infection.ghost_trail"]}
 
 # spam tp
 scoreboard players operation #id temp = @s infection.ghost_id
