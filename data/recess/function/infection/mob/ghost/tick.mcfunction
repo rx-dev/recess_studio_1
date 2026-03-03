@@ -2,6 +2,8 @@
 
 # invis please
 effect give @s minecraft:invisibility infinite 1 true
+item replace entity @s weapon.mainhand with air
+item replace entity @s weapon.offhand with air
 
 # find new wander target every second
 scoreboard players add @s infection.ghost_movement_timer 1
