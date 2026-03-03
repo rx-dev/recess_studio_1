@@ -1,5 +1,8 @@
 # @s: wandering trader (ghost brain)
 
+# invis please
+effect give @s minecraft:invisibility infinite 1 true
+
 # find new wander target every second
 scoreboard players add @s infection.ghost_movement_timer 1
 execute if entity @s[scores={infection.ghost_movement_timer=50..}] run data modify entity @s wander_target set from entity @p[distance=..12]
