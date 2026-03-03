@@ -7,7 +7,7 @@ scoreboard players set @s[scores={infection.ghost_movement_timer=50..}] infectio
 
 # spam tp
 scoreboard players operation #id temp = @s infection.ghost_id
-execute as @e[type=mannequin, tag=infection.ghost] if score @s infection.ghost_id = #id temp run return run tp @s ~ ~ ~
+execute rotated as @s as @e[type=mannequin, tag=infection.ghost] if score @s infection.ghost_id = #id temp run return run tp @s ^ ^ ^ ~ ~
 
 # if we fail to tp, kill villager
 tp @s ~ ~-100000 ~
