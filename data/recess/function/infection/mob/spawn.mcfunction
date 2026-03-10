@@ -18,7 +18,7 @@ execute \
 
 execute \
     if score $random temp matches 81..100 \
-    summon slime ~ ~ ~ { \
+    run summon slime ~ ~ ~ { \
         Passengers: [ \
             {id:"minecraft:item_display",item:{id:"minecraft:pale_moss_block"}, Tags: ["infection.slime_display", "infection.mob"]} \
         ], \

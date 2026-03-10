@@ -6,7 +6,7 @@
 execute store result score @s infection.ghost_moss_timer run random value 60..100
 
 # create motion vector (outputs to infection:temp motion)
-execute facing entity @p[gamemode=!creative] positioned 0.0 0.0 0.0 summon marker run function recess:infenction/mob/ghost/moss/motion_vector {up: 1, forward: 3}
+execute facing entity @p[gamemode=!creative] eyes positioned 0.0 0.0 0.0 summon marker run function recess:infenction/mob/ghost/moss/motion_vector {up: 1, forward: 3}
 
 # create moss (can't be picked up, dies after 10s automatically)
 summon item ~ ~ ~ { \
