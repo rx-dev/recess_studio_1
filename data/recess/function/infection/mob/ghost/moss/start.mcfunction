@@ -6,7 +6,7 @@
 execute store result score @s infection.ghost_moss_timer run random value 60..100
 
 # create motion vector (outputs to infection:temp motion)
-execute facing entity @p[gamemode=!creative] eyes positioned 0.0 0.0 0.0 summon marker run function recess:infection/mob/ghost/moss/motion_vector {up: 1, forward: 3}
+execute facing entity @p eyes positioned 0.0 0.0 0.0 summon marker run function recess:infection/mob/ghost/moss/motion_vector {up: 2, forward: 5}
 
 tellraw @a {storage: "infection:temp", nbt: "motion"}
 
