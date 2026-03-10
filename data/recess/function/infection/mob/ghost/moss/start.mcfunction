@@ -8,6 +8,8 @@ execute store result score @s infection.ghost_moss_timer run random value 60..10
 # create motion vector (outputs to infection:temp motion)
 execute facing entity @p[gamemode=!creative] eyes positioned 0.0 0.0 0.0 summon marker run function recess:infenction/mob/ghost/moss/motion_vector {up: 1, forward: 3}
 
+tellraw @a {storage: "infection:temp", nbt: "motion"}
+
 # create moss (can't be picked up, dies after 10s automatically)
 execute anchored eyes run summon item ~ ~ ~ { \
     Item: {id: "pale_moss_block", components: {item_model: "minecraft:air"}}, \
