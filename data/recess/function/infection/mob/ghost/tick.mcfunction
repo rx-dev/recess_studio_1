@@ -7,7 +7,7 @@ item replace entity @s weapon.offhand with air
 
 # find new wander target every second
 scoreboard players add @s infection.ghost_movement_timer 1
-execute if entity @s[scores={infection.ghost_movement_timer=50..}] run data modify entity @s wander_target set from entity @p[distance=..12]
+execute if entity @s[scores={infection.ghost_movement_timer=50..}] run data modify entity @s wander_target set from entity @p[distance=..12] Pos
 scoreboard players set @s[scores={infection.ghost_movement_timer=50..}] infection.ghost_movement_timer 0
 
 # poison ghost trail
