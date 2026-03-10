@@ -15,6 +15,10 @@ execute if entity @s[scores={infection.ghost_movement_timer=15}] run summon mark
 execute if entity @s[scores={infection.ghost_movement_timer=30}] run summon marker ~ ~.75 ~ {Tags:["infection.mob", "infection.ghost_trail"]}
 execute if entity @s[scores={infection.ghost_movement_timer=45}] run summon marker ~ ~.75 ~ {Tags:["infection.mob", "infection.ghost_trail"]}
 
+# moss block throwing
+scoreboard players remove @s[scores={infection.ghost_moss_timer=1..}] infection.ghost_moss_timer 1
+execute if entity @s[scores={infection.ghost_moss_timer=0}] run function recess:infection/mob/ghost/moss/start
+
 # spam tp
 scoreboard players operation #id temp = @s infection.ghost_id
 execute rotated as @s as @e[type=mannequin, tag=infection.ghost] if score @s infection.ghost_id = #id temp run return run tp @s ^ ^ ^ ~ ~
