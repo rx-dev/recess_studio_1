@@ -12,7 +12,8 @@ data modify entity @s Thrower set from storage infection:temp ghost_uuid
 
 # make display look and ride correctly
 ride @n[type=item_display,tag=infection.ghost_moss_display_init] mount @s
-execute on controller run data merge entity @s {item: {id: "pale_moss_block"}, transformation: {scale:[2.0f,2.0f,2.0f]}}
+execute on controller run data modify entity @s item set value {id: "pale_moss_block"}
+execute on controller run data modify entity @s transformation set value {scale:[2.0f,2.0f,2.0f]}
 
 # setup tags
 execute on controller run tag @s add infection.ghost_moss_display

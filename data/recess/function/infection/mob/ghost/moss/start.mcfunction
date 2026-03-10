@@ -3,7 +3,7 @@
 # @s: ghost
 
 # reset moss timer (3-5s)
-execute store result score @s infection.ghost_moss_timer run random value 60..100
+execute store result score @s infection.ghost_moss_timer run random value 65..140
 
 # create motion vector (outputs to infection:temp motion)
 execute facing entity @p eyes positioned 0.0 0.0 0.0 summon marker run function recess:infection/mob/ghost/moss/motion_vector {up: 0.5, forward: 1}
