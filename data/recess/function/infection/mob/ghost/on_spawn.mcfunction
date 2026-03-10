@@ -12,3 +12,6 @@ summon minecraft:mannequin ~ ~ ~ {Tags:["infection.new_ghost", "infection.ghost"
 # make ghost ride trader
 scoreboard players operation @n[type=mannequin, tag=infection.new_ghost] infection.ghost_id = #current infection.ghost_id
 tag @n[type=mannequin, tag=infection.new_ghost] remove infection.new_ghost
+
+# moss block timer
+scoreboard players set @s infection.moss_block_timer 120
