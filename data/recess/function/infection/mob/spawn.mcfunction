@@ -8,9 +8,9 @@ execute \
     if score $random temp matches 26..45 \
     summon skeleton run function recess:infection/mob/skeleton/on_spawn
 
-execute \
-    if score $random temp matches 46..60 \
-    summon cave_spider
+# execute \
+#     if score $random temp matches 46..60 \
+#     summon cave_spider
 
 execute \
     if score $random temp matches 61..80 \
