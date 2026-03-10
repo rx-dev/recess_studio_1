@@ -14,4 +14,4 @@ scoreboard players operation @n[type=mannequin, tag=infection.new_ghost] infecti
 tag @n[type=mannequin, tag=infection.new_ghost] remove infection.new_ghost
 
 # moss block timer
-scoreboard players set @s infection.moss_block_timer 120
+scoreboard players set @s infection.ghost_moss_timer 120
