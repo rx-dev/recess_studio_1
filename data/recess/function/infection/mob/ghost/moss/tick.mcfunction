@@ -2,6 +2,9 @@
 # called from ../../tick
 # @s: item_display
 
+# detect if we've hit the player
+execute if entity @p[distance=..1] run return run recess:infection/mob/ghost/moss/damage_player
+
 # kill item once it's on the ground
 execute on vehicle if data entity @s {OnGround: 1b} run kill @s
 
