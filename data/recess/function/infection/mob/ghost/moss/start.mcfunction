@@ -16,7 +16,7 @@ scoreboard players set #max_magnitude const 16000
 scoreboard players operation $out temp > #min_magnitude const
 scoreboard players operation $out temp < #max_magnitude const
 tellraw @a ["dist2 ", {"score": {"name": "$out", "objective": "temp"}}]
-execute store result storage infection:temp dist.forward double .001 run scoreboard players get $out temp
+execute store result storage infection:temp dist.forward double .0001 run scoreboard players get $out temp
 
 # scoreboard players operation $out temp *= $100 const
 # scoreboard players operation $out temp /= $4 const
