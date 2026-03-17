@@ -22,7 +22,7 @@ execute store result storage infection:temp dist.forward double .001 run scorebo
 # scoreboard players operation $out temp /= $4 const
 # execute store result storage infection:temp dist.up double .00001 run scoreboard players get $out temp
 
-tellraw @a ["dist3 ", {"storage": "infection:temp", "nbt": "motion"}]
+tellraw @a ["dist3 ", {"storage": "infection:temp", "nbt": "dist"}]
 execute facing entity @p[distance=..16] eyes positioned 0.0 0.0 0.0 summon marker run function recess:infection/mob/ghost/moss/motion_vector with storage infection:temp dist
 data modify storage infection:temp ghost_uuid set from entity @s UUID
 
