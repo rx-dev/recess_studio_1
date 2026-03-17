@@ -18,9 +18,9 @@ scoreboard players operation $out temp < #max_magnitude const
 tellraw @a ["dist2 ", {"score": {"name": "$out", "objective": "temp"}}]
 execute store result storage infection:temp dist.forward double .0001 run scoreboard players get $out temp
 
-# scoreboard players operation $out temp *= $100 const
-# scoreboard players operation $out temp /= $4 const
-# execute store result storage infection:temp dist.up double .00001 run scoreboard players get $out temp
+scoreboard players operation $out temp *= $100 const
+scoreboard players operation $out temp /= $4 const
+execute store result storage infection:temp dist.up double .000001 run scoreboard players get $out temp
 
 tellraw @a ["dist3 ", {"storage": "infection:temp", "nbt": "dist"}]
 execute facing entity @p[distance=..16] eyes positioned 0.0 0.0 0.0 summon marker run function recess:infection/mob/ghost/moss/motion_vector with storage infection:temp dist
