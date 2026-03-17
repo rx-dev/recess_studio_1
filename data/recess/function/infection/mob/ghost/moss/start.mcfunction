@@ -12,8 +12,8 @@ data modify storage infection:temp motion set value {up: 0, forward: 0}
 ## max dist calc
 scoreboard players set #min_magnitude const 2000
 scoreboard players set #max_magnitude const 16000
-scoreboard players operation $out > #min_magnitude const
-scoreboard players operation $out < #max_magnitude const
+scoreboard players operation $out temp > #min_magnitude const
+scoreboard players operation $out temp < #max_magnitude const
 execute store result storage infection:temp motion.forward double .001 run scoreboard players get $out temp
 
 scoreboard players operation $out temp *= $100 const
