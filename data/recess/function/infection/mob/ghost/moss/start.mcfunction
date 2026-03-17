@@ -7,7 +7,7 @@ execute store result score @s infection.ghost_moss_timer run random value 65..14
 
 # create motion vector (outputs to infection:temp motion)
 execute at @p[distance=..16] run function recess:dist
-data modify storage infection:temp dist set value {forward: 0}
+data modify storage infection:temp dist set value {up: 0, forward: 0}
 tellraw @a ["dist ", {"score": {"name": "$out", "objective": "temp"}}]
 
 ## max dist calc
