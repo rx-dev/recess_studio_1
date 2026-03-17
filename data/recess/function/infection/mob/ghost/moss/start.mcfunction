@@ -23,7 +23,7 @@ scoreboard players operation $out temp /= $4 const
 execute store result storage infection:temp dist.up double .000001 run scoreboard players get $out temp
 
 tellraw @a ["dist3 ", {"storage": "infection:temp", "nbt": "dist"}]
-execute facing entity @p[distance=..16] eyes positioned 0.0 0.0 0.0 summon marker run function recess:infection/mob/ghost/moss/motion_vector with storage infection:temp dist
+execute facing entity @p[distance=..32] eyes positioned 0.0 0.0 0.0 summon marker run function recess:infection/mob/ghost/moss/motion_vector with storage infection:temp dist
 data modify storage infection:temp ghost_uuid set from entity @s UUID
 
 # create moss (can't be picked up, dies after 10s automatically)
@@ -34,4 +34,4 @@ execute anchored eyes run summon item ~ ~ ~ { \
     Tags:["infection.ghost_moss_item_init", "infection.ghost_moss_item"] \
 }
 
-execute if entity @p[distance=..16] as @n[type=item,tag=infection.ghost_moss_item_init] at @s run function recess:infection/mob/ghost/moss/init
+execute if entity @p[distance=..32] as @n[type=item,tag=infection.ghost_moss_item_init] at @s run function recess:infection/mob/ghost/moss/init
