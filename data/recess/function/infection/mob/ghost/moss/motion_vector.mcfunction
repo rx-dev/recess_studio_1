@@ -2,7 +2,7 @@
 # called from ./start
 # @s: marker
 
-$tp ^ ^$(up) ^$(forward)
+$tp ^ ^ ^$(forward)
 
 data modify storage infection:temp motion set from entity @s Pos
 

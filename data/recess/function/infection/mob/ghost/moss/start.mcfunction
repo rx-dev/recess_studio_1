@@ -7,7 +7,7 @@ execute store result score @s infection.ghost_moss_timer run random value 65..14
 
 # create motion vector (outputs to infection:temp motion)
 execute at @p[distance=..16] run function recess:dist
-data modify storage infection:temp dist set value {up: 0, forward: 0}
+data modify storage infection:temp dist set value {forward: 0}
 tellraw @a ["dist ", {"score": {"name": "$out", "objective": "temp"}}]
 
 ## max dist calc
@@ -18,9 +18,9 @@ scoreboard players operation $out temp < #max_magnitude const
 tellraw @a ["dist2 ", {"score": {"name": "$out", "objective": "temp"}}]
 execute store result storage infection:temp dist.forward double .001 run scoreboard players get $out temp
 
-scoreboard players operation $out temp *= $100 const
-scoreboard players operation $out temp /= $4 const
-execute store result storage infection:temp dist.up double .00001 run scoreboard players get $out temp
+# scoreboard players operation $out temp *= $100 const
+# scoreboard players operation $out temp /= $4 const
+# execute store result storage infection:temp dist.up double .00001 run scoreboard players get $out temp
 
 tellraw @a ["dist3 ", {"storage": "infection:temp", "nbt": "motion"}]
 execute facing entity @p[distance=..16] eyes positioned 0.0 0.0 0.0 summon marker run function recess:infection/mob/ghost/moss/motion_vector with storage infection:temp dist
