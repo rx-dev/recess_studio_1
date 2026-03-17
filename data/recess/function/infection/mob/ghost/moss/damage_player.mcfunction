@@ -3,7 +3,7 @@
 # @s: item_display
 
 execute on vehicle on origin run tag @s add infection.ghost_thrower
-execute as @a[distance=..1] run damage @s 5 minecraft:falling_block by @n[type=wandering_trader,tag=infection.ghost_thrower]
+execute as @a[distance=..2] run damage @s 5 minecraft:falling_block by @n[type=wandering_trader,tag=infection.ghost_thrower]
 tag @e remove infection.ghost_thrower
 
 # av
