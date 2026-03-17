@@ -18,7 +18,7 @@
 #> 	   -> calculates the velocity of entity @s
 
 #> Summon helper if it doesn't exist..
-forceload 0 0
+forceload add 0 0
 execute unless entity 4b40174b-85fa-5b2a-b82b-94a86a3399b9 run summon marker ~ ~ ~ {UUID:[I;1262491467,-2047190230,-1205103448,1781766585]}
 
 #> Get start
