@@ -13,5 +13,4 @@ execute \
     run function recess:infection/compass/update_holding
 scoreboard players reset @a infection.used_carrot_on_a_stick
 
-execute as @a[type=slime,tag=!infected.checked] at @s
 execute as @e[tag=infection.mob] at @s run function recess:infection/mob/tick
