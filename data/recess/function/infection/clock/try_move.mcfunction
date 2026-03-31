@@ -32,7 +32,6 @@ scoreboard players operation #dist_z temp *= #dist_z temp
 scoreboard players operation #orig_dist temp = #dist_x temp
 scoreboard players operation #orig_dist temp += #dist_z temp
 
-tellraw @a [{"text":"new dist: "},{"score":{"name":"#new_dist","objective":"temp"}},{"text":", orig dist: "},{"score":{"name":"#orig_dist","objective":"temp"}}]
 execute if score #new_dist temp < #orig_dist temp run function recess:infection/clock/move
 
 tag @a remove infection.closest_player
