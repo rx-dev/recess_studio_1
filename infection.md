@@ -40,15 +40,15 @@ infecting a block:
 
 ## Playtest thoughts
 
-- Boss mob
+x Boss mob
   - Spews globs of infection
   - .
-- more mob spawning
+x more mob spawning
 - Different mobs that spawn
 - infection stays near player
 - bossbar wasn't working
 - flamethrower can refill from lava without using lava
-- slimes are invisible
+x slimes are invisible
 - water mob
 - mobs in the dungeon
 - infected effect
