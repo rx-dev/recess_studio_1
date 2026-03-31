@@ -13,18 +13,22 @@ execute \
 #     summon cave_spider
 
 execute \
-    if score $random temp matches 61..80 \
+    if score $random temp matches 61..74 \
     summon wandering_trader run function recess:infection/mob/ghost/on_spawn
 
 
 execute \
-    if score $random temp matches 81..90 \
+    if score $random temp matches 75..87 \
     summon slime run function recess:infection/mob/slime/on_spawn {size:0}
 
 execute \
-    if score $random temp matches 91..97 \
+    if score $random temp matches 87..95 \
     summon slime run function recess:infection/mob/slime/on_spawn {size:1}
 
 execute \
-    if score $random temp matches 98.. \
+    if score $random temp matches 95..98 \
     summon slime run function recess:infection/mob/slime/on_spawn {size:2}
+
+execute \
+    if score $random temp matches 98.. \
+    summon slime run function recess:infection/mob/slime/on_spawn {size:3}
