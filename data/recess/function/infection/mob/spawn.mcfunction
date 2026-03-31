@@ -16,16 +16,15 @@ execute \
     if score $random temp matches 61..80 \
     summon wandering_trader run function recess:infection/mob/ghost/on_spawn
 
+
 execute \
-    if score $random temp matches 81..100 \
-    run summon slime ~ ~ ~ { \
-        Passengers: [ \
-            {id:"minecraft:item_display",item:{id:"minecraft:pale_moss_block"}, Tags: ["infection.slime_display", "infection.mob"]} \
-        ], \
-        Size: 0, \
-        Tags: ["infection.mob", "infection.slime", "infection.mob_spawned"] \
-    }
+    if score $random temp matches 81..90 \
+    summon slime run function recess:infection/mob/slime/on_spawn {size:0}
+
 execute \
-    if score $random temp matches 81..100 \
-    as @n[type=slime,tag=infection.mob_spawned] \
-    run function recess:infection/mob/slime/on_spawn
+    if score $random temp matches 91..97 \
+    summon slime run function recess:infection/mob/slime/on_spawn {size:1}
+
+execute \
+    if score $random temp matches 98.. \
+    summon slime run function recess:infection/mob/slime/on_spawn {size:2}
