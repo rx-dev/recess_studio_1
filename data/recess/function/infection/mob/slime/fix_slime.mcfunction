@@ -1,3 +1,13 @@
+execute if data entity @s {Size:2} run summon item_display ~ ~ ~ { \
+    item:{id:"minecraft:pale_moss_block"}, \
+    Tags: ["infection.slime_display", "infection.mob", "infection.size2", "infection.new_slime_display"], \
+    transformation: { \
+        left_rotation: [0f,0f,0f,1f], \
+        right_rotation: [0f,0f,0f,1f], \
+        translation: [0f,-0.5f,0f], \
+        scale: [2f,2f,2f] \
+    }}
+
 execute if data entity @s {Size:1} run summon item_display ~ ~ ~ { \
     item:{id:"minecraft:pale_moss_block"}, \
     Tags: ["infection.slime_display", "infection.mob", "infection.size1", "infection.new_slime_display"], \
