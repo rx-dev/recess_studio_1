@@ -10,3 +10,4 @@ execute positioned ~-1 ~ ~ summon wandering_trader run function recess:infection
 execute positioned ~1 ~ ~ summon wandering_trader run function recess:infection/mob/ghost/on_spawn
 
 effect give @s minecraft:resistance 5 3 true
+bossbar set recess:infection players @a

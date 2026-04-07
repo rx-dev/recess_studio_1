@@ -44,8 +44,8 @@ x Boss mob
   - Spews globs of infection
   - .
 x more mob spawning
-- Different mobs that spawn
-- infection stays near player
+x Different mobs that spawn
+x infection stays near player
 - bossbar wasn't working
 - flamethrower can refill from lava without using lava
 x slimes are invisible

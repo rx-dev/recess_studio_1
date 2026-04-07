@@ -1,9 +1,9 @@
 summon zombie ~ ~ ~ { \
-    equipment: {head: {id: "stone"}}, \
+    equipment: {head: {id: "pale_moss_block"}}, \
     attributes: [ \
         {id: "scale", base: 2.0}, \
         {id: "health", base: 40}, \
         {id: "movement_speed", modifiers: [{id: "slow", operation: "add_value", amount: -.03}]} \
     ], \
-    Tags: ["recess.beast_of_burden"] \
+    Tags: ["recess.beast_of_burden", "infection.mob"] \
 }

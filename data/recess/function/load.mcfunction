@@ -2,7 +2,7 @@ tellraw @a {text:"[Infection Datapack Loaded]",color:"yellow"}
 function quack:api/create_scoreboards
 
 schedule function recess:1s 1s replace
-schedule function recess:5s 5s replace
+schedule function recess:10s 10s replace
 
 scoreboard objectives add recess.nearby_beasts dummy
 scoreboard objectives add recess.timer dummy
