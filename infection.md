@@ -46,9 +46,9 @@ x Boss mob
 x more mob spawning
 x Different mobs that spawn
 x infection stays near player
-- bossbar wasn't working
-- flamethrower can refill from lava without using lava
+x bossbar wasn't working
+x flamethrower can refill from lava without using lava
 x slimes are invisible
-- water mob
-- mobs in the dungeon
-- infected effect
+/ water mob
+x mobs in the dungeon
+x infected effect

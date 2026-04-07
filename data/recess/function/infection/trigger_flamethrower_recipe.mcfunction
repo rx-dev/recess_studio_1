@@ -1,4 +1,4 @@
-tellraw @a [ \
+tellraw @s [ \
     { text: "An infection has been spotted! Craft and use a ", color: "red" }, \
     { \
         text: "[Flamethrower]", \
