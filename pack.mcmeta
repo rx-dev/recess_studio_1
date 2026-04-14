@@ -1,6 +1,7 @@
 {
     "pack": {
-        "pack_format": 45,
-        "description": "Our Datapack"
+        "min_format": 101,
+        "max_format": 101,
+        "description": "Infection Datapack by _TH3_3MP3R0R_"
     }
 }
