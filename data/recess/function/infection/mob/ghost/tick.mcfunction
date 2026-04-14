@@ -14,7 +14,7 @@ scoreboard players set @s[scores={infection.ghost_movement_timer=50..}] infectio
 scoreboard players operation #mod temp = @s infection.ghost_movement_timer
 scoreboard players set #5 temp 5
 scoreboard players operation #mod temp %= #5 temp
-execute if entity @s[scores={infection.ghost_movement_timer=1..}] run summon marker ~ ~.75 ~ {Tags:["infection.mob", "infection.ghost_trail"]}
+execute if score #mod temp matches 0 run summon marker ~ ~.75 ~ {Tags:["infection.mob", "infection.ghost_trail"]}
 
 # moss block throwing
 scoreboard players remove @s[scores={infection.ghost_moss_timer=1..}] infection.ghost_moss_timer 1
