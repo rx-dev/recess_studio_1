@@ -35,4 +35,4 @@ scoreboard players operation #orig_dist temp += #dist_z temp
 tag @a remove infection.closest_player
 
 execute if score #new_dist temp < #orig_dist temp run return run function recess:infection/clock/move
-execute if predicate {function: "random_chance", chance: 0.1} run return run function recess:infection/clock/move
+execute if predicate {condition: "random_chance", chance: 0.1} run return run function recess:infection/clock/move
