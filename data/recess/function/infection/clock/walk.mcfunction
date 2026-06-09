@@ -20,13 +20,14 @@ execute if block ~ ~ ~ pale_moss_block run return 1
 # reset infector
 execute if score @s infection.air_water matches 25.. run return run function recess:infection/clock/respawn
 execute unless predicate recess:check_if_near_air run return run scoreboard players add @s infection.air_water 1
-execute if block ~ ~ ~ water run return run scoreboard players add @s infection.air_water 5
+# execute if block ~ ~ ~ water run return run scoreboard players add @s infection.air_water 5
 execute if block ~ ~ ~ #air run return run scoreboard players add @s infection.air_water 5
 execute if block ~ ~ ~ moss_block run return run scoreboard players add @s infection.air_water 15
 
 # actually infect
 execute store success score $success temp unless block ~ ~ ~ #c:chests run setblock ~ ~ ~ pale_moss_block
 execute unless score $success temp matches 1.. run return run function recess:infection/clock/respawn
+function recess:infection/clock/biome/infect
 scoreboard players add $BLOCKS_INFECTED infection.state 1
 execute store result storage recess:infection blocks int 1 run scoreboard players get $BLOCKS_INFECTED infection.state
 function recess:infection/clock/update_bossbar with storage recess:infection 
